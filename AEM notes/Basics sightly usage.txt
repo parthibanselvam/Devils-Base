@@ -1,0 +1,25 @@
+<div data-sly-use.new="com.aem.community.core.models.ParentModel"></div>
+
+<pre data-sly-use.hello="com.aem.community.core.models.HelloWorldModel">
+HelloWorldModel says:
+${hello.getMessage}
+</pre>
+
+
+
+<p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
+<pre data-sly-use.hello="com.aem.community.core.models.HelloWorldModel">
+HelloWorldModel says:
+${hello.message}
+</pre>
+<div
+data-sly-test.concat=${ 'This is page {0}, with title {1}'@ format=[currentPage.name,currentPage.title]}>
+${concat}
+</div>
+
+
+<ul data-sly-list.child="${currentPage.listChildren}">
+<li>${child.title}</li>
+</ul>
+
+
