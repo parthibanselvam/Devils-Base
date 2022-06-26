@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Excel to JSON Tool"
+        sling:resourceType="granite/ui/components/shell/page"
+        consoleId="excel-upload">
+        <head jcr:primaryType="nt:unstructured">
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[granite.ui.coral.foundation,excel-to-json.base]"/>
+        </head>
+        <title
+            jcr:primaryType="nt:unstructured"
+            jcr:title="XLS / XLSX to JSON Converter"
+            sling:resourceType="granite/ui/components/shell/title"/>
+        <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container"
+            margin="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+                <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                    margin="{Boolean}true">
+                    <items jcr:primaryType="nt:unstructured">
+                        <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <container
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    margin="{Boolean}true">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <heading
+                                            granite:class="coral-Heading coral-Heading--2"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                            level="{Long}2"
+                                            text="Upload Your XLS / XLSX File here"/>
+                                        <well
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <container
+                                                    granite:id="fileUploadForm"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form"
+                                                    enctype="multipart/form-data"
+                                                    foundationForm="{Boolean}true"
+                                                    loadingMask="{Boolean}true"
+                                                    margin="{Boolean}true"
+                                                    maximized="{Boolean}true"
+                                                    style="vertical">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <products
+                                                            granite:class="cq-dialog-dropdown-showhide"
+                                                            granite:id="productSelect"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            emptyText="Select a Directory to store JSON"
+                                                            fieldLabel="JSON Storage Directory">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <option1
+																	jcr:primaryType="nt:unstructured"
+                                                                    text="GRE"
+                                                                    value="/content/dam/ets-org/s/gre"/>
+                                                                <option2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="PRAXIS"
+                                                                    value="/content/dam/ets-org/s/praxis"/>
+                                                                <option3
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="TOEFL"
+                                                                    value="/content/dam/ets-org/s/toefl"/>
+                                                                <option4
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="TOEIC"
+                                                                    value="/content/dam/ets-org/s/toeic"/>
+                                                                <option5
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="SLS"
+                                                                    value="/content/dam/ets-org/s/sls"/>
+                                                                <option6
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="All Products"
+                                                                    value="/content/dam/ets-org/s/"/>
+                                                                <option7
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Contacts"
+                                                                    value="/content/dam/ets-org/s/contacts"/>
+                                                            </items>
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cq-dialog-dropdown-showhide-target=" .path-showhide-target"/>
+                                                        </products>
+                                                        <functionality
+                                                            granite:class="cq-dialog-dropdown-showhide"
+                                                            granite:id="functionSelect"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            emptyText="Select Functionality"
+                                                            fieldLabel="Functionality Dropdown">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <option1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Score Requirement"
+                                                                    value="scorerequirement"/>
+                                                                <option2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Score Report Calendar"
+                                                                    value="scorereportcalendar"/>
+                                                                <option3
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Where To Test/Schedule Your Test"
+                                                                    value="essa"/>
+                                                                <option4
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Contact Us GRE"
+                                                                    value="contact_us_list_gre"/>
+																<option5
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Contact Us Praxis"
+                                                                    value="contact_us_list_praxis"/>
+                                                                <option6
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Contact Us TOEFL"
+                                                                    value="contact_us_list_toefl"/>
+                                                                <option7
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Contact Us SLS"
+                                                                    value="contact_us_list_sls"/>
+                                                                <option8
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Approved Institutions and Fellowship Sponsors"
+                                                                    value="institutions_and_fellowship_sponsors"/>
+                                                                <option9
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="GRE MBA Programs"
+                                                                    value="GRE_MBA_programs"/>
+                                                                <option10
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="MyBest Scores Acceptance"
+                                                                    value="mybest_scores_acceptance"/>
+                                                                <option11
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Home Edition Acceptance"
+                                                                    value="home_edition_acceptance"/>
+                                                                <option12
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Essential Acceptance"
+                                                                    value="essential_acceptance"/>
+                                                            </items>
+                                                            <granite:data
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cq-dialog-dropdown-showhide-target=" .path-showhide-target"/>
+                                                        </functionality>
+                                                        <fileUpload
+                                                            granite:id="xls"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                                                            autoStart="{Boolean}false"
+                                                            emptyText="Choose XLS / XLSX File"
+                                                            fieldLabel="Choose XLS / XLSX File"
+                                                            icon="upload"
+                                                            mimeTypes="[.xls,.xlsx]"
+                                                            multiple="{Boolean}false"
+                                                            name="xls"
+                                                            required="{Boolean}true"
+                                                            text="Choose File"/>
+															<fileSelected
+                                                            granite:class="coral-Heading coral-Heading--4 color--primary font--normal"
+                                                            granite:id="selectedFile"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                            level="{Long}4"
+                                                            text="No file chosen"/>
+                                                        <container
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            margin="{Boolean}true">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <submitButton
+                                                                    granite:id="btnSubmit"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/button"
+                                                                    text="Convert to JSON"
+                                                                    type="submit"/>
+                                                            </items>
+                                                        </container>
+                                                        <loadingGIF
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                            fieldLabel=""
+                                                            wrapperClass="loading loading--hide"/>
+                                                        <resultMessage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/field"
+                                                            fieldLabel=""
+                                                            wrapperClass="result"/>
+                                                    </items>
+                                                </container>
+                                            </items>
+                                        </well>
+                                        <publish-json
+                                            granite:id="conJSON"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            text="Publish JSON"
+                                            type="submit"/>
+                                    </items>
+                                </container>
+                            </items>
+                        </column>
+                    </items>
+                </columns>
+            </items>
+        </content>
+    </jcr:content>
+</jcr:root>
