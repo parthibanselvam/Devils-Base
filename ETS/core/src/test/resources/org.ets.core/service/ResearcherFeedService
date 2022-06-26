@@ -1,0 +1,301 @@
+{
+    "2022":{
+      "jcr:created": "Mon Jun 20 2022 15:01:19 GMT+0000",
+      "jcr:createdBy": "etsservice",
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:created": "Mon Jun 20 2022 15:01:19 GMT+0000",
+        "jcr:createdBy": "etsservice",
+        "cq:lastModified": "Mon Jun 20 2022 15:01:19 GMT+0000",
+        "sling:resourceType": "ets/components/generic-page",
+        "cq:lastModifiedBy": "etsservice",
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:title": "2022",
+        "cq:template": "/conf/ets/settings/wcm/templates/researcher-template",
+        "root": {
+          "layout": "simple",
+          "sling:resourceType": "ets/components/container",
+          "jcr:primaryType": "nt:unstructured",
+          "container": {
+            "layout": "simple",
+            "sling:resourceType": "ets/components/container",
+            "jcr:primaryType": "nt:unstructured"
+          }
+        }
+      },
+      "kdyf": {
+        "jcr:created": "Mon Jun 20 2022 15:01:19 GMT+0000",
+        "jcr:createdBy": "etsservice",
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+          "jcr:created": "Mon Jun 20 2022 15:01:19 GMT+0000",
+          "keywords": [
+            "College Promise Programs",
+            "Postsecondary Education",
+            "Ecosystems",
+            "College Students",
+            "Community College Students",
+            "Adult Students",
+            "Nontraditional Students",
+            "Disability Groups",
+            "First Generation College Students",
+            "Foster Children",
+            "Parents",
+            "Family Needs",
+            "Child Care",
+            "Academic Support Services",
+            "Introductory Courses",
+            "Remedial Education",
+            "Access to Education",
+            "Degree Completion",
+            "Workforce Readiness",
+            "Inclusion",
+            "Equity",
+            "Paying For College",
+            "Tuition",
+            "Funding",
+            "Student Financial Aid",
+            "Financial Support",
+            "Technology",
+            "Support Services",
+            "Education Policy Research"
+          ],
+          "jcr:createdBy": "etsservice",
+          "sling:resourceType": "ets/components/generic-page",
+          "jcr:title": "[00]Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations",
+          "jcr:description": "The time is now to examine the nation’s capacity to help guide students in gaining access to, paying for, and graduating from college. College promise programs have served as an excellent model. But because a uniform, national college promise model would not adequately serve the estimated 20 million students in postsecondary education, ETS and College Promise launched an effort to expand the work on college promise programs to identify ecosystems of support for specific student populations. In 2021, we invited scholars, practitioners, and student representatives to join a design team and cocreate the college promise program for their student populations: first-generation students, youth in or aged out of foster care, students with disabilities, student parents, and students needing academic support. In multiple panel discussions, other colleagues reviewed the ecosystem designs, focusing on college promise programs in general, the design of the ecosystems of support, or the financing of the ecosystems. Several key themes emerged from the meeting: (a) Although the design teams focused on one aspect of a student’s life, they stressed the importance of focusing on the intersectionality of their identities; (b) terminology and definitions are important not only for policy and practice reasons but for the messages they send to students about inclusion; (c) financing a college education is more than paying tuition and fees; (d) enhanced data collection will support research, policy, and practice; and (e) developing a college promise program requires a focus on both students and postsecondary institutions.",
+          "cq:lastModified": "Mon Jun 20 2022 15:01:19 GMT+0000",
+          "cq:lastModifiedBy": "etsservice",
+          "jcr:primaryType": "cq:PageContent",
+          "cq:template": "/conf/ets/settings/wcm/templates/researcher-template",
+          "root": {
+            "layout": "simple",
+            "sling:resourceType": "ets/components/container",
+            "jcr:primaryType": "nt:unstructured",
+            "container": {
+              "layout": "simple",
+              "sling:resourceType": "ets/components/container",
+              "jcr:primaryType": "nt:unstructured",
+              "researcher": {
+                "keywords": [
+                  "College Promise Programs",
+                  "Postsecondary Education",
+                  "Ecosystems",
+                  "College Students",
+                  "Community College Students",
+                  "Adult Students",
+                  "Nontraditional Students",
+                  "Disability Groups",
+                  "First Generation College Students",
+                  "Foster Children",
+                  "Parents",
+                  "Family Needs",
+                  "Child Care",
+                  "Academic Support Services",
+                  "Introductory Courses",
+                  "Remedial Education",
+                  "Access to Education",
+                  "Degree Completion",
+                  "Workforce Readiness",
+                  "Inclusion",
+                  "Equity",
+                  "Paying For College",
+                  "Tuition",
+                  "Funding",
+                  "Student Financial Aid",
+                  "Financial Support",
+                  "Technology",
+                  "Support Services",
+                  "Education Policy Research"
+                ],
+				"year": "2022",
+                "reportNumber": [
+                  "RR-22-07"
+                ],
+                "publicationType": "Report",
+                "sling:resourceType": "ets/components/researcher-info-details",
+                "source": [
+                  "ETS Research Report",
+                  "ETS Policy Evaluation & Research Center Report"
+                ],
+                "title": "[00]Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations",
+                "url": "https://doi.org/10.1002/ets2.12350",
+                "numPages": "112",
+                "bodyDescription": "The time is now to examine the nation’s capacity to help guide students in gaining access to, paying for, and graduating from college. College promise programs have served as an excellent model. But because a uniform, national college promise model would not adequately serve the estimated 20 million students in postsecondary education, ETS and College Promise launched an effort to expand the work on college promise programs to identify ecosystems of support for specific student populations. In 2021, we invited scholars, practitioners, and student representatives to join a design team and cocreate the college promise program for their student populations: first-generation students, youth in or aged out of foster care, students with disabilities, student parents, and students needing academic support. In multiple panel discussions, other colleagues reviewed the ecosystem designs, focusing on college promise programs in general, the design of the ecosystems of support, or the financing of the ecosystems. Several key themes emerged from the meeting: (a) Although the design teams focused on one aspect of a student’s life, they stressed the importance of focusing on the intersectionality of their identities; (b) terminology and definitions are important not only for policy and practice reasons but for the messages they send to students about inclusion; (c) financing a college education is more than paying tuition and fees; (d) enhanced data collection will support research, policy, and practice; and (e) developing a college promise program requires a focus on both students and postsecondary institutions.",
+                "jcr:primaryType": "nt:unstructured",
+                "authors": [
+                  "Millett, Catherine M."
+                ]
+              }
+            }
+          }
+        }
+      },
+      "kdya": {
+        "jcr:created": "Mon Jun 20 2022 15:01:20 GMT+0000",
+        "jcr:createdBy": "etsservice",
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+          "jcr:created": "Mon Jun 20 2022 15:01:20 GMT+0000",
+          "keywords": [
+            "Graduate School",
+            "Decision-Making",
+            "College Applications",
+            "Student Diversity",
+            "Demographic Characteristics",
+            "Socioeconomic Status (SES)",
+            "Sociocultural Factors",
+            "Enrollment Influences",
+            "Motivation",
+            "Graduate Record Examination (GRE)",
+            "Survey Data Analysis",
+            "Exploratory Structural Equation Models",
+            "Exploratory Factor Analysis",
+            "Selection",
+            "Prediction",
+            "Outcomes of Education",
+            "Grade Point Average (GPA)",
+            "Science, Technology, Engineering and Mathematics (STEM)"
+          ],
+          "jcr:createdBy": "etsservice",
+          "sling:resourceType": "ets/components/generic-page",
+          "jcr:title": "[00]Factors Considered in Graduate School Decision-Making: Implications for Graduate School Application and Acceptance",
+          "jcr:description": "The career gains of obtaining a graduate degree are well established, but those from lower socioeconomic status (SES) and underrepresented demographic backgrounds have persistently been disadvantaged in earning those degrees. We aim to contribute to research on enhancing access, diversity, and equity to graduate education by providing insights into what motivates individuals to pursue a graduate education across demographic and socioeconomic backgrounds. Using survey data collected from GRE test takers at two time points and exploratory structural equation modeling, we explore the factors that individuals consider to be important for pursuing graduate education and selecting graduate programs, along with subsequent application and acceptance outcomes. We identified three factors considered in deciding to pursue graduate school and six factors considered in selecting graduate school programs. Those who aimed to apply to graduate school for professional development considered an extensive set of factors in selecting programs. The factors considered varied by gender, ethnicity/race, and SES. These factors further varied in the extent to which they predicted graduate school application and acceptance outcomes.",
+          "cq:lastModified": "Mon Jun 20 2022 15:01:20 GMT+0000",
+          "cq:lastModifiedBy": "etsservice",
+          "jcr:primaryType": "cq:PageContent",
+          "cq:template": "/conf/ets/settings/wcm/templates/researcher-template",
+          "root": {
+            "layout": "simple",
+            "sling:resourceType": "ets/components/container",
+            "jcr:primaryType": "nt:unstructured",
+            "container": {
+              "layout": "simple",
+              "sling:resourceType": "ets/components/container",
+              "jcr:primaryType": "nt:unstructured",
+              "researcher": {
+                "keywords": [
+                  "Graduate School",
+                  "Decision-Making",
+                  "College Applications",
+                  "Student Diversity",
+                  "Demographic Characteristics",
+                  "Socioeconomic Status (SES)",
+                  "Sociocultural Factors",
+                  "Enrollment Influences",
+                  "Motivation",
+                  "Graduate Record Examination (GRE)",
+                  "Survey Data Analysis",
+                  "Exploratory Structural Equation Models",
+                  "Exploratory Factor Analysis",
+                  "Selection",
+                  "Prediction",
+                  "Outcomes of Education",
+                  "Grade Point Average (GPA)",
+                  "Science, Technology, Engineering and Mathematics (STEM)"
+                ],
+				"year": "2022",
+                "reportNumber": [
+                  "RR-22-06"
+                ],
+                "publicationType": "Report",
+                "sling:resourceType": "ets/components/researcher-info-details",
+                "source": [
+                  "ETS Research Report"
+                ],
+                "title": "[00]Factors Considered in Graduate School Decision-Making: Implications for Graduate School Application and Acceptance",
+                "url": "https://doi.org/10.1002/ets2.12348",
+                "numPages": "20",
+                "bodyDescription": "The career gains of obtaining a graduate degree are well established, but those from lower socioeconomic status (SES) and underrepresented demographic backgrounds have persistently been disadvantaged in earning those degrees. We aim to contribute to research on enhancing access, diversity, and equity to graduate education by providing insights into what motivates individuals to pursue a graduate education across demographic and socioeconomic backgrounds. Using survey data collected from GRE test takers at two time points and exploratory structural equation modeling, we explore the factors that individuals consider to be important for pursuing graduate education and selecting graduate programs, along with subsequent application and acceptance outcomes. We identified three factors considered in deciding to pursue graduate school and six factors considered in selecting graduate school programs. Those who aimed to apply to graduate school for professional development considered an extensive set of factors in selecting programs. The factors considered varied by gender, ethnicity/race, and SES. These factors further varied in the extent to which they predicted graduate school application and acceptance outcomes.",
+                "jcr:primaryType": "nt:unstructured",
+                "authors": [
+                  "Cho-Baker, Sugene",
+                  "Kell, Harrison",
+                  "Fishtein, Daniel"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "kdki": {
+        "jcr:created": "Mon Jun 20 2022 15:01:23 GMT+0000",
+        "jcr:createdBy": "etsservice",
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+          "jcr:created": "Mon Jun 20 2022 15:01:23 GMT+0000",
+          "keywords": [
+            "Selected Response Items",
+            "Test Characteristics",
+            "Low-Stakes Assessment",
+            "Test Engagement",
+            "Multiple Choice Items",
+            "Programme for International Assessment of Adult Competencies (PIAAC)",
+            "Technology Enhanced Assessments",
+            "Flagging",
+            "Rapid Responding",
+            "Guessing",
+            "Response Time Effort (RTE)",
+            "Total Score"
+          ],
+          "jcr:createdBy": "etsservice",
+          "sling:resourceType": "ets/components/generic-page",
+          "jcr:title": "[00]Influence of Selected-Response Format Variants on Test Characteristics and Test-Taking Effort: An Empirical Study",
+          "jcr:description": "Different variants of the selected-response (SR) item type have been developed for various reasons (i.e., simulating realistic situations, examining critical-thinking and/or problem-solving skills). Generally, the variants of SR item format are more complex than the traditional multiple-choice (MC) items, which may be more challenging to test takers and thus may discourage their test engagement on low-stakes assessments. Low test-taking effort has been shown to distort test scores and thereby diminish score validity. We used data collected from a large-scale assessment to investigate how variants of the SR item format may impact test properties and test engagement. Results show that the studied variants of SR item format were generally harder and more time consuming compared to the traditional MC item format, but they did not show negative impact on test-taking effort. However, item position had a dominating influence on nonresponse rates and rapid-guessing rates in a cumulative fashion, even though the effect sizes were relatively small in the studied data.",
+          "cq:lastModified": "Mon Jun 20 2022 15:01:23 GMT+0000",
+          "cq:lastModifiedBy": "etsservice",
+          "jcr:primaryType": "cq:PageContent",
+          "cq:template": "/conf/ets/settings/wcm/templates/researcher-template",
+          "root": {
+            "layout": "simple",
+            "sling:resourceType": "ets/components/container",
+            "jcr:primaryType": "nt:unstructured",
+            "container": {
+              "layout": "simple",
+              "sling:resourceType": "ets/components/container",
+              "jcr:primaryType": "nt:unstructured",
+              "researcher": {
+                "keywords": [
+                  "Selected Response Items",
+                  "Test Characteristics",
+                  "Low-Stakes Assessment",
+                  "Test Engagement",
+                  "Multiple Choice Items",
+                  "Programme for International Assessment of Adult Competencies (PIAAC)",
+                  "Technology Enhanced Assessments",
+                  "Flagging",
+                  "Rapid Responding",
+                  "Guessing",
+                  "Response Time Effort (RTE)",
+                  "Total Score"
+                ],
+                "year": "2022",
+                "reportNumber": [
+                  "RR-22-01"
+                ],
+                "publicationType": "Report",
+                "sling:resourceType": "ets/components/researcher-info-details",
+                "source": [
+                  "ETS Research Report"
+                ],
+                "title": "[00]Influence of Selected-Response Format Variants on Test Characteristics and Test-Taking Effort: An Empirical Study",
+                "url": "https://doi.org/10.1002/ets2.12345",
+                "numPages": "22",
+                "bodyDescription": "Different variants of the selected-response (SR) item type have been developed for various reasons (i.e., simulating realistic situations, examining critical-thinking and/or problem-solving skills). Generally, the variants of SR item format are more complex than the traditional multiple-choice (MC) items, which may be more challenging to test takers and thus may discourage their test engagement on low-stakes assessments. Low test-taking effort has been shown to distort test scores and thereby diminish score validity. We used data collected from a large-scale assessment to investigate how variants of the SR item format may impact test properties and test engagement. Results show that the studied variants of SR item format were generally harder and more time consuming compared to the traditional MC item format, but they did not show negative impact on test-taking effort. However, item position had a dominating influence on nonresponse rates and rapid-guessing rates in a cumulative fashion, even though the effect sizes were relatively small in the studied data.",
+                "jcr:primaryType": "nt:unstructured",
+                "authors": [
+                  "Guo, Hongwen",
+                  "Rios, Joseph A.",
+                  "Ling, Guangming",
+                  "Wang, Zhen",
+                  "Gu, Lin",
+                  "Yang, Zhitong",
+                  "Liu, Ou Lydia"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+}

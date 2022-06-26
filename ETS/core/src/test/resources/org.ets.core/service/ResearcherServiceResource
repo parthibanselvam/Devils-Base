@@ -1,0 +1,24 @@
+{
+  "content": {
+    "jcr:primaryType": "sling:OrderedFolder",
+    "dam": {
+      "jcr:primaryType": "sling:OrderedFolder",
+      "ets-sample-record.xml": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "renditions": {
+            "jcr:primaryType": "nt:folder",
+            "original": {
+              "jcr:primaryType": "nt:file",
+              "jcr:content":{
+                "jcr:primaryType": "oak:Resource",
+                "jcr:mimeType": "application/xml"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

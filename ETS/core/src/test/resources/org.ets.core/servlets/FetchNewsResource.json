@@ -1,0 +1,72 @@
+{
+  "press-release": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Select test",
+      "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+      "sling:resourceType": "ets/components/generic-page"
+    },
+    "article-one": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:created":"Sat Apr 16 2022 07:18:17 GMT-0400",
+        "jcr:title": "ETS Launches Business School Advisory Council in India",
+        "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+        "contentType": "ets:filters/press-releases",
+        "category": [
+          "/content/cq:tags/ets/category/partnerships-n-collaborations",
+          "ets:category/research"
+        ],
+        "pageBackground": "white-bg",
+        "sling:resourceType": "ets/components/generic-page",
+        "shortTitle": "ETS Launches Business School Advisory Council in India",
+        "shortDescription": "ETS, the world’s largest, nonprofit educational assessment, measurement, research and learning organization ETS, the world’s largest, nonprofit educational assessment, measurement, research and learning organization"
+      }
+    },
+    "article-two": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:created":"Sat Apr 16 2022 07:18:17 GMT-0400",
+        "jcr:title": "ETS Launches Business School Advisory Council in India",
+        "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+        "contentType": "ets:filters/press-releases",
+        "category": [
+          "/content/cq:tags/ets/category/partnerships-n-collaborations",
+          "ets:category/research"
+        ],
+        "pageBackground": "white-bg",
+        "sling:resourceType": "ets/components/generic-page",
+        "shortTitle": "ETS Launches Business School Advisory Council in India",
+        "shortDescription": "ETS, the world’s largest, nonprofit educational assessment, measurement, research and learning organization"
+      }
+    },
+    "article-three": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:created":"Sat Apr 16 2022 07:18:17 GMT-0400",
+        "jcr:title": "ETS Launches Business School Advisory Council in India",
+        "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+        "contentType": "ets:filters/press-releases",
+        "category": [
+          "/content/cq:tags/ets/category/partnerships-n-collaborations",
+          "ets:category/research"
+        ],
+        "pageBackground": "white-bg",
+        "sling:resourceType": "ets/components/generic-page",
+        "shortTitle": "ETS Launches Business School Advisory Council in India",
+        "shortDescription": "ETS, the world’s largest, nonprofit educational assessment, measurement, research and learning organization"
+      }
+    }
+  }
+}

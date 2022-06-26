@@ -1,0 +1,112 @@
+{
+  "select-test": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+      "jcr:createdBy": "admin",
+      "jcr:title": "Select test",
+      "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+      "cq:lastReplicationAction": "Deactivate",
+      "jcr:versionHistory": "17d6fdc5-d4d1-4688-be5a-8e4a15468926",
+      "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+      "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+      "cq:lastReplicationAction_preview": "Activate",
+      "cq:lastReplicationAction_publish": "Deactivate",
+      "jcr:predecessors": [
+        "27f733fe-c8f5-498e-b605-863f2a149eb6"
+      ],
+      "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+      "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+      "cq:lastModified": "Wed Apr 13 2022 10:33:27 GMT+0000",
+      "disableBreadcrumb": "false",
+      "jcr:baseVersion": "27f733fe-c8f5-498e-b605-863f2a149eb6",
+      "jcr:isCheckedOut": true,
+      "jcr:uuid": "daec57b4-54be-4a16-b99e-4219a7f9f9e8",
+      "sling:resourceType": "ets/components/generic-page",
+      "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+      "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+      "cq:lastModifiedBy": "PJAIN003@ets.org",
+      "progressbar":{
+          "sling:resourceType":"ets/components/progressbar",
+          "jcr:primaryType":"nt:unstructured",
+          "parentPagePath":"/content/select-test"
+        }
+    },
+    "select-category": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+          "mix:versionable"
+        ],
+        "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Select Category",
+        "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+        "cq:lastReplicationAction": "Deactivate",
+        "jcr:versionHistory": "f5658469-6701-4aea-a40a-696d75073492",
+        "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+        "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+        "cq:lastReplicationAction_preview": "Activate",
+        "cq:lastReplicationAction_publish": "Deactivate",
+        "jcr:predecessors": [
+          "66f72e8f-f0e8-4d3e-841f-dd05c7298e57"
+        ],
+        "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+        "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+        "cq:lastModified": "Wed Apr 13 2022 10:33:27 GMT+0000",
+        "disableBreadcrumb": "false",
+        "jcr:baseVersion": "66f72e8f-f0e8-4d3e-841f-dd05c7298e57",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "3d306c78-8474-4270-813d-ec73ddc59706",
+        "sling:resourceType": "ets/components/generic-page",
+        "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+        "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+        "cq:lastModifiedBy": "PJAIN003@ets.org"
+      },
+      "suggestion": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+        "jcr:content": {
+          "jcr:primaryType": "cq:PageContent",
+          "jcr:mixinTypes": [
+            "mix:versionable"
+          ],
+          "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+          "jcr:createdBy": "admin",
+          "jcr:title": "Suggestion",
+          "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+          "cq:lastReplicationAction": "Deactivate",
+          "jcr:versionHistory": "82448720-64b6-44fc-b8c9-7c68fa9af19d",
+          "pwaOrientation": "any",
+          "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+          "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+          "cq:lastReplicationAction_preview": "Activate",
+          "cq:lastReplicationAction_publish": "Deactivate",
+          "jcr:predecessors": [
+            "98e41063-8b38-4041-b820-6c5ceb56ce3d"
+          ],
+          "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+          "pwaDisplay": "standalone",
+          "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+          "cq:lastModified": "Wed Apr 13 2022 10:33:27 GMT+0000",
+          "disableBreadcrumb": "true",
+          "pwaCachestrategy": "staleWhileRevalidate",
+          "jcr:baseVersion": "98e41063-8b38-4041-b820-6c5ceb56ce3d",
+          "jcr:isCheckedOut": true,
+          "jcr:uuid": "92b93469-e81b-4de0-87db-3e717778c764",
+          "sling:resourceType": "ets/components/generic-page",
+          "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+          "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+          "cq:lastModifiedBy": "PJAIN003@ets.org"
+        }
+      }
+    }
+  }
+}

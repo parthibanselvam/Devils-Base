@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sydney>
+  <import>
+    <template id="Patent">
+      <record>
+        <field id="SystemKey"><![CDATA[e97278e1-d26e-4b87-984f-345674690b2c]]></field>
+        <field id="DtTmCreated"><![CDATA[2018/03/21 10:45:42]]></field>
+        <link id="UserCreated" linkfield="~Name"><![CDATA[Administrator]]></link>
+        <field id="DtTmModifd"><![CDATA[2018/08/06 18:08:35]]></field>
+        <link id="UserModifd" linkfield="~Name"><![CDATA[kmcquillen]]></link>
+        <field id="pattitle"><![CDATA[Accessibility of Testing Within a Validity Framework]]></field>
+        <link id="FamilyIDLk" linkfield="Term"><![CDATA[34864510]]></link>
+        <link id="pateDocTyp" linkfield="Code"><![CDATA[]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Patent]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Active Patent]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Test Accessibility]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Test Validity]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Test-Takers with Disabilities]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Test Takers]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Knowledge Skills and Abilities (KSA)]]></link>
+        <link id="PatSubLK" linkfield="Term"><![CDATA[Proficiency]]></link>
+        <field id="uspatnumbe"><![CDATA[7,217,134]]></field>
+        <field id="Abstractte"><![CDATA[Methods for designing an assessment and providing accessibility features for a test taker profile are disclosed. A test taker profile, including multiple knowledge, skill and other attribute(s) (KSAs), is defined in which each KSA has a specific level. Each KSA is designated as either a focal KSA (an essential part of the targeted proficiency to be measured) or an ancillary KSA (not an essential part). For each focal KSA, a focal value (the value that the test taker must have to possess a high level in the targeted proficiency) is defined. For a particular test design alternative (which may include an accessibility feature), a requirement is determined for each KSA. An accessibility feature is selected which avoids indications of invalidity, including: a mismatch between the targeted proficiency and the expected proficiency; the test taker profile does not satisfy all ancillary requirements; and focal requirements are either excessive or insufficient.]]></field>
+        <field id="patAK"><![CDATA[00460]]></field>
+        <link id="inventorLK" linkfield="Term"><![CDATA[Hansen, Eric G.]]></link>
+        <link id="inventorLK" linkfield="Term"><![CDATA[Mislevy, Robert J.]]></link>
+        <link id="inventorLK" linkfield="Term"><![CDATA[Steinberg, Linda S.]]></link>
+        <field id="patissdate"><![CDATA[2007/05/15]]></field>
+        <field id="expdate"><![CDATA[2027/05/15]]></field>
+        <field id="uspaturl"><![CDATA[http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=7,217,134.PN.&OS=PN/7,217,134&RS=PN/7,217,134]]></field>
+        <field id="appnumb"><![CDATA[11/054,019]]></field>
+        <field id="Filingdate"><![CDATA[2004/02/09]]></field>
+        <field id="lawfirm"><![CDATA[Pepper Hamilton]]></field>
+        <field id="etsfilenum"><![CDATA[225]]></field>
+      </record>
+    </template>
+  </import>
+</sydney>

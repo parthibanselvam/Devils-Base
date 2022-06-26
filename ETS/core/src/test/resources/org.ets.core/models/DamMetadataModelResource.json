@@ -1,0 +1,24 @@
+{
+  "dam": {
+    "jcr:primaryType": "sling:Folder",
+    "sample-image.png": {
+      "jcr:primaryType": "dam:Asset",
+      "jcr:content": {
+        "jcr:primaryType": "dam:AssetContent",
+        "metadata": {
+          "jcr:primaryType": "nt:unstructured",
+          "dc:description": "Sample alt txt"
+        }
+      }
+    },
+    "sample-image-without-alt.png": {
+      "jcr:primaryType": "dam:Asset",
+      "jcr:content": {
+        "jcr:primaryType": "dam:AssetContent",
+        "metadata": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      }
+    }
+  }
+}

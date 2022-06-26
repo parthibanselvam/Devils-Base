@@ -1,0 +1,11 @@
+{
+    "product-page": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Product page",
+            "articlePublishDate":"Mon Dec 06 2021 00:00:00 GMT-0800",
+            "author":["/content/dam/ets-org/ets-content-fragment/author/mary-brown","/content/dam/ets-org/ets-content-fragment/author/steve"]
+        }
+    }
+}

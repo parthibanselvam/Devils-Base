@@ -1,0 +1,45 @@
+{
+  "experience-fragments": {
+    "jcr:primaryType": "sling:OrderedFolder",
+    "jcr:createdBy":"admin",
+    "jcr:title":"Test",
+    "jcr:created":"Wed Apr 20 2022 09:42:20 GMT-0400",
+    "fragment-one": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:createdBy": "admin",
+      "jcr:content":{
+            "jcr:primaryType":"cq:PageContent",
+            "jcr:createdBy":"admin",
+            "jcr:title":"Algebra",
+            "cq:template":"/conf/ets/settings/wcm/templates/xf-web-variation",
+            "cq:xfMasterVariation":true,
+            "jcr:created":"Wed Apr 20 2022 09:42:43 GMT-0400",
+            "cq:lastModified":"Wed Apr 20 2022 09:46:15 GMT-0400",
+            "cq:xfVariantType":"web",
+            "cq:tags":[
+               "experience-fragments:variation/web"
+            ],
+            "sling:resourceType":"ets/components/xfpage",
+            "cq:lastModifiedBy":"admin"
+         }
+    },
+    "fragment-two": {
+      "jcr:primaryType":"cq:Page",
+      "jcr:createdBy":"admin",
+      "jcr:created":"Thu Apr 21 2022 03:50:09 GMT-0400",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Trignometry",
+         "cq:template":"/libs/cq/experience-fragments/components/experiencefragment/template",
+         "jcr:created":"Thu Apr 21 2022 03:50:09 GMT-0400",
+         "cq:lastModified":"Thu Apr 21 2022 03:50:09 GMT-0400",
+         "cq:tags":[
+           "experience-fragments:variation/web"
+         ],
+         "sling:resourceType":"cq/experience-fragments/components/experiencefragment",
+         "cq:lastModifiedBy":"admin"
+      }
+    }
+  }
+}

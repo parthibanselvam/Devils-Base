@@ -1,0 +1,214 @@
+{
+    "all-products-listing": {
+      "jcr:primaryType": "sling:OrderedFolder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu May 26 2022 07:15:07 GMT-0400",
+      "jcr:content": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "All Products Listing",
+        "sourcing": "false"
+      },
+      "product1": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:mixinTypes": [
+          "mix:referenceable",
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:versionHistory": "9daacaed-c981-48da-9b6e-ff4baf1ed9ab",
+        "jcr:predecessors": [
+          "a8bb62d1-39d6-4fd7-aa30-a4cb12248d3b"
+        ],
+        "jcr:created": "Tue May 31 2022 14:17:54 GMT-0400",
+        "jcr:baseVersion": "a8bb62d1-39d6-4fd7-aa30-a4cb12248d3b",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "9669aecb-94d1-4974-b80c-47ee83af49ce",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "jcr:title": "Product1",
+          "jcr:lastModifiedBy": "admin",
+          "contentFragment": true,
+          "cq:name": "product1",
+          "jcr:lastModified": "Thu Jun 02 2022 14:09:39 GMT-0400",
+          "lastFragmentSave": "Thu Jun 02 2022 14:09:39 GMT-0400",
+          "cq:parentPath": "/content/dam/ets-org/ets-content-fragment/all-products-listing",
+          "renditions": {
+            "jcr:primaryType": "nt:folder",
+            "jcr:createdBy": "admin",
+            "jcr:created": "Tue May 31 2022 14:17:54 GMT-0400"
+          },
+          "related": {
+            "jcr:primaryType": "nt:unstructured"
+          },
+          "metadata": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:Taggable"
+            ]
+          },
+          "data": {
+            "jcr:primaryType": "nt:unstructured",
+            "cq:model": "/conf/ets/settings/dam/cfm/models/all-products-list",
+            "master": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "dam:cfVariationNode",
+                "cq:Taggable"
+              ],
+              "productName@LastModified": "Tue May 31 2022 14:19:33 GMT-0400",
+              "productLink@LastModified": "Tue May 31 2022 14:19:33 GMT-0400",
+              "productLink": "/content/ets-org/language-master/en/gre",
+              "productName": "ETS Product 1",
+              "productDescription": "This is ETS Product 1. For the JCR-based implementation, which maps Tags onto JCR Nodes, you can directly use Sling’s adaptTo mechanism if you have the resource.",
+              "productDescription@ContentType": "text/plain",
+              "categories@LastModified": "Thu Jun 02 2022 14:09:39 GMT-0400",
+              "cq:tags": [
+                "ets-org:news/press-release/partnerships-&-collaborations",
+                "ets-org:filters/xys"
+              ],
+              "categories": [
+                "ets-org:news/press-release/partnerships-&-collaborations",
+                "ets-org:filters/xys"
+              ],
+              "productDescription@LastModified": "Tue May 31 2022 14:19:33 GMT-0400"
+            }
+          }
+        }
+      },
+      "product2": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:mixinTypes": [
+          "mix:referenceable",
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:versionHistory": "2dce958f-0b93-40e1-b859-5acd4524c2f2",
+        "jcr:predecessors": [
+          "70fb2ca1-5da3-491f-b310-5c0792622b12"
+        ],
+        "jcr:created": "Tue May 31 2022 14:19:54 GMT-0400",
+        "jcr:baseVersion": "70fb2ca1-5da3-491f-b310-5c0792622b12",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "bf9447c8-0f5b-4570-881e-d0560f392517",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "jcr:title": "Product2",
+          "jcr:lastModifiedBy": "admin",
+          "contentFragment": true,
+          "cq:name": "product2",
+          "jcr:lastModified": "Wed Jun 01 2022 05:29:24 GMT-0400",
+          "lastFragmentSave": "Wed Jun 01 2022 05:29:24 GMT-0400",
+          "cq:parentPath": "/content/dam/ets-org/ets-content-fragment/all-products-listing",
+          "renditions": {
+            "jcr:primaryType": "nt:folder",
+            "jcr:createdBy": "admin",
+            "jcr:created": "Tue May 31 2022 14:19:54 GMT-0400"
+          },
+          "related": {
+            "jcr:primaryType": "nt:unstructured"
+          },
+          "metadata": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:Taggable"
+            ]
+          },
+          "data": {
+            "jcr:primaryType": "nt:unstructured",
+            "cq:model": "/conf/ets/settings/dam/cfm/models/all-products-list",
+            "master": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "dam:cfVariationNode",
+                "cq:Taggable"
+              ],
+              "productName@LastModified": "Tue May 31 2022 14:22:00 GMT-0400",
+              "productLink@LastModified": "Tue May 31 2022 14:22:00 GMT-0400",
+              "productLink": "https://www.ets.org/gre/institutions",
+              "productName": "ETS Product 2",
+              "productDescription": "This is ETS Product 2. While a tag may only be converted *from *a resource (not a node), a tag can be converted *to *both a node and a resource.",
+              "productDescription@ContentType": "text/plain",
+              "categories@LastModified": "Wed Jun 01 2022 05:29:24 GMT-0400",
+              "cq:tags": [
+                "ets-org:filters/admission",
+                "ets-org:filters/press-releases",
+                "ets-org:brands/toefl"
+              ],
+              "categories": [
+                "ets-org:filters/press-releases",
+                "ets-org:filters/admission",
+                "ets-org:brands/toefl"
+              ],
+              "productDescription@LastModified": "Tue May 31 2022 14:22:00 GMT-0400"
+            }
+          }
+        }
+      },
+      "test": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:mixinTypes": [
+          "mix:referenceable",
+          "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:versionHistory": "e21d706b-de4a-4ee2-bd28-c8c7b2ac9b67",
+        "jcr:predecessors": [
+          "0f2b3baf-26e2-47b1-a1f4-cda17d34c059"
+        ],
+        "jcr:created": "Tue May 31 2022 14:25:55 GMT-0400",
+        "jcr:baseVersion": "0f2b3baf-26e2-47b1-a1f4-cda17d34c059",
+        "jcr:isCheckedOut": true,
+        "jcr:uuid": "3ca0374f-067c-4d6d-a94d-353f2eb5b16b",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "jcr:title": "Test",
+          "jcr:lastModifiedBy": "admin",
+          "contentFragment": true,
+          "cq:name": "test",
+          "jcr:lastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+          "lastFragmentSave": "Tue May 31 2022 14:27:07 GMT-0400",
+          "cq:parentPath": "/content/dam/ets-org/ets-content-fragment/all-products-listing",
+          "renditions": {
+            "jcr:primaryType": "nt:folder",
+            "jcr:createdBy": "admin",
+            "jcr:created": "Tue May 31 2022 14:25:55 GMT-0400"
+          },
+          "related": {
+            "jcr:primaryType": "nt:unstructured"
+          },
+          "metadata": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:Taggable"
+            ]
+          },
+          "data": {
+            "jcr:primaryType": "nt:unstructured",
+            "cq:model": "/conf/ets/settings/dam/cfm/models/article-contributor-model",
+            "master": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "dam:cfVariationNode",
+                "cq:Taggable"
+              ],
+              "name@LastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+              "Tags@LastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+              "image@LastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+              "alternativeTextForAccessibility@LastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+              "profile": "test pro",
+              "profile@LastModified": "Tue May 31 2022 14:27:07 GMT-0400",
+              "Tags": [
+                "ets-org:news"
+              ],
+              "name": "test",
+              "image": "/content/dam/ets-org/logo/ETS.svg",
+              "alternativeTextForAccessibility": "aaaa",
+              "cq:tags": [
+                "ets-org:news"
+              ]
+            }
+          }
+        }
+      }
+    }
+}

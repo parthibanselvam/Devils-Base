@@ -1,0 +1,152 @@
+{
+    "feature-news": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Feature news",
+            "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+            "sling:resourceType": "ets/components/generic-page",
+            "featurenews": {
+                "sling:resourceType": "ets/components/featureNews",
+                "jcr:primaryType": "nt:unstructured",
+                "cards": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "pagepath": "/content/article-one"
+                    },
+                    "item1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "pagepath": "/content/article-two"
+                    }
+                }
+            }
+        }
+    },
+    "article-one": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:mixinTypes": [
+                "mix:versionable"
+            ],
+            "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+            "jcr:createdBy": "admin",
+            "jcr:title": "An Education Leader on Preparing Today’s Learners for an Optimistic Future",
+            "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction": "Deactivate",
+            "jcr:versionHistory": "59f46f7d-c91f-4ed1-a4e8-ccf0d22b8109",
+            "pwaOrientation": "any",
+            "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+            "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction_preview": "Activate",
+            "cq:lastReplicationAction_publish": "Deactivate",
+            "jcr:predecessors": [
+                "bd3e3e16-47ce-439a-b7d1-9de7f31ae890"
+            ],
+            "contentType": "ets:filters/press-releases",
+            "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+            "pwaDisplay": "standalone",
+            "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModified": "Wed Apr 13 2022 10:31:33 GMT+0000",
+            "disableBreadcrumb": "false",
+            "category": [
+                "ets:category/partnerships-n-collaborations"
+            ],
+            "pwaCachestrategy": "staleWhileRevalidate",
+            "jcr:baseVersion": "bd3e3e16-47ce-439a-b7d1-9de7f31ae890",
+            "jcr:isCheckedOut": true,
+            "pageBackground": "white-bg",
+            "jcr:uuid": "03f131f8-bb68-4c4b-9d11-73336b84d51e",
+            "sling:resourceType": "ets/components/generic-page",
+            "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+            "shortTitle": "An Education Leader on Preparing Today’s Learners for an Optimistic Future",
+            "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModifiedBy": "PJAIN003@ets.org",
+            "shortDescription": "Preparing today’s generation of learners to redesign the future first requires them to imagine all they can achieve by working on Preparing Today’s Learners for an Optimistic Future"
+        }
+    },
+    "article-two": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:mixinTypes": [
+                "mix:versionable"
+            ],
+            "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+            "jcr:createdBy": "admin",
+            "jcr:title": "An Education Leader on Preparing Today’s Learners for an Optimistic Future",
+            "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction": "Deactivate",
+            "jcr:versionHistory": "59f46f7d-c91f-4ed1-a4e8-ccf0d22b8109",
+            "pwaOrientation": "any",
+            "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+            "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction_preview": "Activate",
+            "cq:lastReplicationAction_publish": "Deactivate",
+            "jcr:predecessors": [
+                "bd3e3e16-47ce-439a-b7d1-9de7f31ae890"
+            ],
+            "contentType": "ets:filters/press-releases",
+            "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+            "pwaDisplay": "standalone",
+            "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModified": "Wed Apr 13 2022 10:31:33 GMT+0000",
+            "disableBreadcrumb": "false",
+            "category": [
+                "ets:category/partnerships-n-collaborations"
+            ],
+            "pwaCachestrategy": "staleWhileRevalidate",
+            "jcr:baseVersion": "bd3e3e16-47ce-439a-b7d1-9de7f31ae890",
+            "jcr:isCheckedOut": true,
+            "pageBackground": "white-bg",
+            "jcr:uuid": "03f131f8-bb68-4c4b-9d11-73336b84d51e",
+            "sling:resourceType": "ets/components/generic-page",
+            "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+            "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModifiedBy": "PJAIN003@ets.org"
+        }
+    },
+    "article-three": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:mixinTypes": [
+                "mix:versionable"
+            ],
+            "cq:lastReplicatedBy_preview": "parthiban.selvam.p@accenture.com",
+            "jcr:createdBy": "admin",
+            "jcr:title": "An Education Leader on Preparing Today’s Learners for an Optimistic Future",
+            "cq:lastReplicatedBy_publish": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction": "Deactivate",
+            "jcr:versionHistory": "59f46f7d-c91f-4ed1-a4e8-ccf0d22b8109",
+            "pwaOrientation": "any",
+            "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+            "cq:lastReplicatedBy": "anand.a.bisht@avanade.com",
+            "cq:lastReplicationAction_preview": "Activate",
+            "cq:lastReplicationAction_publish": "Deactivate",
+            "jcr:predecessors": [
+                "bd3e3e16-47ce-439a-b7d1-9de7f31ae890"
+            ],
+            "contentType": "ets:filters/press-releases",
+            "jcr:created": "Sat Apr 16 2022 07:18:18 GMT-0400",
+            "pwaDisplay": "standalone",
+            "cq:lastReplicated": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModified": "Wed Apr 13 2022 10:31:33 GMT+0000",
+            "disableBreadcrumb": "false",
+            "category": [
+                "ets:category/partnerships-n-collaborations"
+            ],
+            "pwaCachestrategy": "staleWhileRevalidate",
+            "jcr:baseVersion": "bd3e3e16-47ce-439a-b7d1-9de7f31ae890",
+            "jcr:isCheckedOut": true,
+            "pageBackground": "white-bg",
+            "jcr:uuid": "03f131f8-bb68-4c4b-9d11-73336b84d51e",
+            "sling:resourceType": "ets/components/generic-page",
+            "cq:lastReplicated_preview": "Thu Apr 07 2022 15:36:24 GMT+0000",
+            "cq:lastReplicated_publish": "Thu Apr 14 2022 14:44:49 GMT+0000",
+            "cq:lastModifiedBy": "PJAIN003@ets.org",
+            "shortDescription": "Preparing today’s generation of learners to redesign the future"
+        }
+    }
+}

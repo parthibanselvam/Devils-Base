@@ -1,0 +1,53 @@
+{
+"article-page": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "Home",
+      "author":["/content/cf/steve","/content/cf/mary-brown"],
+      "cq:template": "/content/templates/generic-page",
+      "sling:resourceType": "ets/components/generic-page",
+      "articlecontributor": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "ets/components/articlecontributor"
+      }
+    }
+  },
+  "cf":{
+    "jcr:primaryType": "sling:Folder",
+    "steve": {
+      "jcr:primaryType": "dam:Asset",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "dam:AssetContent",
+        "jcr:title": "Header menu",
+        "contentFragment": true,
+        "cq:name": "header-menu",
+        "cq:parentPath": "/content/content-fragment/header-menu",
+        "data": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:model": "/content/cf-models/header-menu",
+          "master": {"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable","dam:cfVariationNode"],"name@LastModified":"Thu Mar 10 2022 03:12:49 GMT+0000","image@LastModified":"Tue Apr 05 2022 09:25:16 GMT+0000","alternativeTextForAccessibility@LastModified":"Sun Mar 20 2022 08:00:52 GMT+0000","profile":"Co-Founder & Executive Director of Life Pieces To Masterpieces","profile@LastModified":"Thu Mar 10 2022 03:12:49 GMT+0000","alternativetextforaccessibility@LastModified":"Sun Mar 20 2022 07:58:13 GMT+0000","name":"Mary Brown","image":"/content/dam/ets-org/corporate/profile-pictures/mary-brown.png","alternativetextforaccessibility":"Mary","alternativeTextForAccessibility":"Mary"}
+        },
+        "metadata":{"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable"]}
+      }
+    },
+    "mary-brown": {
+      "jcr:primaryType": "dam:Asset",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "dam:AssetContent",
+        "jcr:title": "Header menu",
+        "contentFragment": true,
+        "cq:name": "header-menu",
+        "cq:parentPath": "/content/content-fragment/header-menu",
+        "data": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:model": "/content/cf-models/header-menu",
+          "master": {"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable","dam:cfVariationNode"],"name@LastModified":"Thu Mar 10 2022 03:12:49 GMT+0000","image@LastModified":"Tue Apr 05 2022 09:25:16 GMT+0000","alternativeTextForAccessibility@LastModified":"Sun Mar 20 2022 08:00:52 GMT+0000","profile":"Co-Founder & Executive Director of Life Pieces To Masterpieces","profile@LastModified":"Thu Mar 10 2022 03:12:49 GMT+0000","alternativetextforaccessibility@LastModified":"Sun Mar 20 2022 07:58:13 GMT+0000","name":"Mary Brown","image":"/content/dam/ets-org/corporate/profile-pictures/mary-brown.png","alternativetextforaccessibility":"Mary","alternativeTextForAccessibility":"Mary"}
+        },
+        "metadata":{"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable"]}
+      }
+    }
+  }
+}

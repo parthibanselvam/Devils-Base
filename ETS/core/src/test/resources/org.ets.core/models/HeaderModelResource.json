@@ -1,0 +1,207 @@
+{
+  "home": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "Home",
+      "cq:template": "/content/templates/generic-page",
+      "pageTitle": "Home",
+      "sling:resourceType": "ets/components/generic-page",
+      "navTitle": "Home",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "commonLinkCf": "/content/content-fragment/header-menu",
+        "productMenuCf": "/content/content-fragment/product-list",
+        "sling:resourceType": "ets/components/mainheader",
+        "homePagePath": "/content/home"
+      }
+    }
+  },
+  "praxis": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "Praxis",
+      "cq:template": "/content/templates/generic-page",
+      "pageTitle": "Praxis",
+      "sling:resourceType": "ets/components/generic-page",
+      "navTitle": "Praxis",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "commonLinkCf": "/content/content-fragment/header-menu",
+        "productMenuCf": "/content/content-fragment/product-list",
+        "sling:resourceType": "ets/components/mainheader",
+        "homePagePath": "/content/home"
+      }
+    }
+  },
+  "gre": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:title": "GRE",
+      "cq:template": "/content/templates/generic-page",
+      "pageTitle": "GRE",
+      "sling:resourceType": "ets/components/generic-page",
+      "navTitle": "GRE",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "commonLinkCf": "/content/content-fragment/header-menu",
+        "productMenuCf": "/content/content-fragment/product-list",
+        "sling:resourceType": "ets/components/mainheader"
+      }
+    }
+  },
+  "templates": {
+    "jcr:primaryType": "cq:Page",
+    "generic-page": {
+      "jcr:primaryType": "cq:Template",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Apr 07 2022 21:52:38 GMT-0400",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Generic page",
+        "cq:lastReplicatedBy_publish": "karthika.pichandi@accenture.com",
+        "cq:lastReplicationAction": "Activate",
+        "cq:lastReplicatedBy": "karthika.pichandi@accenture.com",
+        "status": "enabled",
+        "cq:lastReplicationAction_publish": "Activate",
+        "jcr:created": "Thu Apr 07 2022 21:52:38 GMT-0400",
+        "cq:lastReplicated": "Thu Apr 07 2022 14:02:27 GMT+0000",
+        "cq:lastModified": "Wed Apr 13 2022 12:52:51 GMT+0000",
+        "cq:templateType": "/conf/ets/settings/wcm/template-types/generic-page",
+        "cq:lastReplicated_publish": "Thu Apr 07 2022 14:02:27 GMT+0000",
+        "cq:lastModifiedBy": "saravanan.a.ms@accenture.com"
+      }
+    }
+  },
+  "cf-model": {
+    "header-menu": {
+      "jcr:primaryType": "cq:Template",
+      "jcr:createdBy": "admin",
+      "ranking": 100,
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Header menu",
+        "status": "enabled",
+        "jcr:created": "Thu Apr 07 2022 23:14:12 GMT-0400",
+        "cq:lastModified": "Thu Apr 07 2022 01:04:18 GMT-0400",
+        "sling:resourceSuperType": "dam/cfm/models/console/components/data/entity",
+        "cq:scaffolding": "/conf/ets/settings/dam/cfm/models/header-menu/jcr:content/model",
+        "cq:templateType": "/libs/settings/dam/cfm/model-types/fragment",
+        "sling:resourceType": "dam/cfm/models/console/components/data/entity/default",
+        "cq:lastModifiedBy": "admin"
+      }
+    },
+    "product-menu": {
+      "jcr:primaryType": "cq:Template",
+      "jcr:createdBy": "admin",
+      "ranking": 100,
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:createdBy": "admin",
+        "jcr:title": "Product menu",
+        "status": "enabled",
+        "jcr:created": "Thu Apr 07 2022 23:14:12 GMT-0400",
+        "cq:lastModified": "Thu Apr 07 2022 01:04:18 GMT-0400",
+        "sling:resourceSuperType": "dam/cfm/models/console/components/data/entity",
+        "cq:scaffolding": "/conf/ets/settings/dam/cfm/models/header-menu/jcr:content/model",
+        "cq:templateType": "/libs/settings/dam/cfm/model-types/fragment",
+        "sling:resourceType": "dam/cfm/models/console/components/data/entity/default",
+        "cq:lastModifiedBy": "admin"
+      }
+    }
+  },
+  "content-fragment": {
+    "jcr:primaryType": "sling:Folder",
+    "header-menu": {
+      "jcr:primaryType": "dam:Asset",
+      "jcr:createdBy": "admin",
+      "jcr:content": {
+        "jcr:primaryType": "dam:AssetContent",
+        "jcr:title": "Header menu",
+        "contentFragment": true,
+        "cq:name": "header-menu",
+        "cq:parentPath": "/content/content-fragment/header-menu",
+        "data": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:model": "/content/cf-models/header-menu",
+          "master": {
+            "jcr:primaryType": "nt:unstructured",
+            "loginLabel": "Login / Register",
+            "etsStoreLabel@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "contactUsLabel": "CONTACT",
+            "contactPageLink": "#",
+            "etsStoreLink": "#",
+            "loginUrl@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "etsStoreLabel": "ETS STORE",
+            "etsStoreLink@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "loginLabel@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "contactUsLabel@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "contactPageLink@LastModified": "Thu Apr 07 2022 23:15:42 GMT-0400",
+            "loginUrl": "#"
+          }
+        },
+        "metadata":{"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable"]}
+      }
+    },
+    "product-list": {
+      "jcr:primaryType": "sling:Folder",
+      "gre": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "jcr:title": "GRE",
+          "jcr:lastModifiedBy": "saravanan.a.ms@accenture.com",
+          "contentFragment": true,
+          "cq:name": "gre",
+          "jcr:lastModified": "Wed Apr 13 2022 12:38:26 GMT+0000",
+          "lastFragmentSave": "Wed Apr 13 2022 12:38:26 GMT+0000",
+          "cq:parentPath": "/content/content-fragment/product-list",
+          "data": {
+            "jcr:primaryType": "nt:unstructured",
+            "cq:model": "/content/cf-models/product-menu",
+            "master": {
+              "jcr:primaryType": "nt:unstructured",
+              "themeCssClass": "theme-gre-bar",
+              "productTitle": "GRE",
+              "productLandingPage": "/content/ets-org/language-master/en/home/gre"
+            }
+          },
+          "metadata":{"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable"]}
+        }
+      },
+      "praxis": {
+        "jcr:primaryType": "dam:Asset",
+        "jcr:content": {
+          "jcr:primaryType": "dam:AssetContent",
+          "jcr:title": "GRE",
+          "jcr:lastModifiedBy": "saravanan.a.ms@accenture.com",
+          "contentFragment": true,
+          "cq:name": "gre",
+          "cq:parentPath": "/content/dam/ets-org/ets-content-fragment/header/product-list",
+          "data": {
+            "jcr:primaryType": "nt:unstructured",
+            "cq:model": "/conf/ets/settings/dam/cfm/models/product-menu",
+            "master": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "dam:cfVariationNode",
+                "cq:Taggable"
+              ],
+              "themeCssClass": "theme-gre-bar",
+              "productTitle": "GRE",
+              "productTitle@LastModified": "Fri Apr 08 2022 00:38:59 GMT-0400",
+              "themeCssClass@LastModified": "Fri Apr 08 2022 00:38:59 GMT-0400",
+              "productLandingPage": "/content/ets-org/language-master/en/home/gre",
+              "productLandingPage@LastModified": "Wed Apr 13 2022 12:38:26 GMT+0000"
+            }
+          },
+          "metadata":{"jcr:primaryType":"nt:unstructured","jcr:mixinTypes":["cq:Taggable"]}
+        }
+      }
+    }
+  }
+}

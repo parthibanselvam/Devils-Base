@@ -1,0 +1,60 @@
+{
+    "test-page": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Test Page",
+            "cq:template": "/conf/ets/settings/wcm/templates/generic-page",
+            "sling:resourceType": "ets/components/generic-page",
+            "horizontalnavigation": {
+                "sling:resourceType": "ets/components/horizontalNavigation",
+                "color": "inherit",
+                "jcr:primaryType": "nt:unstructured",
+                "secondaryList": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "item0": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "tabLink1": "/content/ets-org/language-master/en/home",
+                      "tabName1": "Plan Your Test",
+                      "newTab1": "false",
+                      "secondaryAriaLabel":"plan",
+                      "tertiaryList": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "item0": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "tabLink2": "/content/ets-org/language-master/en/home/demo/home",
+                          "tabName2": "Certification in Pennsylvania",
+                          "newTab2": "false",
+                          "tertiaryAriaLabel":"tertiary1"
+                        },
+                        "item1": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "tabLink2": "/content/ets-org/language-master/en/home/test-page",
+                          "tabName2": "Licensure Requirements",
+                          "newTab2": "false",
+                          "tertiaryAriaLabel":"tertiary2"
+                        }
+                      }
+                    },
+                    "item1": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "tabLink1": "/content/ets-org/language-master/en/home/test-page",
+                      "tabName1": "Where To Test",
+                      "newTab1": "false",
+                      "secondaryAriaLabel":"where",
+                      "tertiaryList": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "item0": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "tabLink2": "/content/ets-org/language-master/en/home/demo/about",
+                          "tabName2": "Wtest1",
+                          "newTab2": "false",
+                          "tertiaryAriaLabel":"tertiary3"
+                        }
+                      }
+                    }
+                }
+            }
+        }
+    }
+}

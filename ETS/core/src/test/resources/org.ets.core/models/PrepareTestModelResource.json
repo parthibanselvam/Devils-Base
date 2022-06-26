@@ -1,0 +1,49 @@
+{
+    "product-page": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Product page",
+            "preparation-material": {
+                "path": "/content/preparation-material-xf",
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "ets/components/preparation-material"
+            },
+            "preparation-material-1": {
+                "path": "/content/preparation-material-xf",
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "ets/components/preparation-material"
+            }
+        }
+    },
+    "preparation-material-xf": {
+        "jcr:primaryType": "sling:Folder",
+        "algebra-i--5162": {
+            "jcr:primaryType": "cq:Page",
+            "jcr:content": {
+                "sling:resourceType": "cq/experience-fragments/components/experiencefragment",
+                "jcr:title": "Algebra J (0380)",
+                "jcr:primaryType": "cq:PageContent",
+                "cq:template": "/libs/cq/experience-fragments/components/experiencefragment/template"
+            }
+        },
+        "trignometry-j-0380": {
+            "jcr:primaryType": "cq:Page",
+            "jcr:content": {
+                "sling:resourceType": "cq/experience-fragments/components/experiencefragment",
+                "jcr:title": "Trignometry J (0380)",
+                "jcr:primaryType": "cq:PageContent",
+                "cq:template": "/libs/cq/experience-fragments/components/experiencefragment/template"
+            }
+        },
+        "medicine": {
+            "jcr:primaryType": "cq:Page",
+            "jcr:content": {
+                "sling:resourceType": "cq/experience-fragments/components/experiencefragment",
+                "jcr:title": "Medicine (0380)",
+                "jcr:primaryType": "cq:PageContent",
+                "cq:template": "/libs/cq/experience-fragments/components/experiencefragment/template"
+            }
+        }
+    }
+}

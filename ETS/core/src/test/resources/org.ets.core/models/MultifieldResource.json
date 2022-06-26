@@ -1,0 +1,37 @@
+{
+"herobanner":{
+  "sling:resourceType":"ets/components/heroBanner",
+  "jcr:primaryType":"nt:unstructured",
+  "cardcategory":{
+    "jcr:primaryType":"nt:unstructured",
+    "item0":{
+      "cardtitle":"Findtherighttestforyou",
+      "icon":"/content/dam/ets-org/custom-icons/test_taker_icon.svg",
+      "jcr:primaryType":"nt:unstructured",
+      "url":"https://www.google.com",
+      "target":"true"
+    },
+    "item1":{
+      "cardtitle":"Proveyourenglishability",
+      "icon":"/content/dam/ets-org/custom-icons/english_test_icon.svg",
+      "jcr:primaryType":"nt:unstructured",
+      "url":"https://www.google.com",
+      "target":"false"
+    },
+    "item2":{
+      "cardtitle":"Gainyourlicensetoteach",
+      "icon":"/content/dam/ets-org/custom-icons/Teaching_license.svg",
+      "jcr:primaryType":"nt:unstructured",
+      "url":"#",
+      "target":"false"
+    },
+    "item3":{
+      "cardtitle":"Findqualifiedapplicants",
+      "icon":"/content/dam/ets-org/custom-icons/find_applicant_icon.svg",
+      "jcr:primaryType":"nt:unstructured",
+      "url":"#",
+      "target":"false"
+    }
+  }
+}
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sydney>
+  <import>
+    <template id="ETSAuthors">
+      <record>
+        <field id="SystemKey"><![CDATA[72cb0645-2dba-49b0-9fa4-01e127861e4c]]></field>
+        <field id="DtTmCreated"><![CDATA[2022/04/08 09:11:16]]></field>
+        <link id="UserCreated" linkfield="~Name"><![CDATA[Administrator]]></link>
+        <field id="DtTmModifd"><![CDATA[2022/04/08 09:17:55]]></field>
+        <link id="UserModifd" linkfield="~Name"><![CDATA[Administrator]]></link>
+        <field id="EAccessKey"><![CDATA[kdyf]]></field>
+        <link id="DocumentTyp" linkfield="Term"><![CDATA[Report]]></link>
+        <field id="Title"><![CDATA[[00]Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations]]></field>
+        <link id="Author" linkfield="Term"><![CDATA[Millett, Catherine M.]]></link>
+        <field id="Reportno2"><![CDATA[RR-22-07]]></field>
+        <link id="Subject" linkfield="Term"><![CDATA[College Promise Programs]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Postsecondary Education]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Ecosystems]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[College Students]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Community College Students]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Adult Students]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Nontraditional Students]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Disability Groups]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[First Generation College Students]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Foster Children]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Parents]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Family Needs]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Child Care]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Academic Support Services]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Introductory Courses]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Remedial Education]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Access to Education]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Degree Completion]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Workforce Readiness]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Inclusion]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Equity]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Paying For College]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Tuition]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Funding]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Student Financial Aid]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Financial Support]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Technology]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Support Services]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Education Policy Research]]></link>
+        <field id="Citation"><![CDATA[ETS Research Report]]></field>
+        <field id="Citation"><![CDATA[ETS Policy Evaluation & Research Center Report]]></field>
+        <field id="URL"><![CDATA[https://doi.org/10.1002/ets2.12350]]></field>
+        <template id="DateGt" linkfield="DateGrp">
+          <record>
+            <field id="SystemKey"><![CDATA[ec8a51bf-10b4-448a-83b3-f64dfffac941]]></field>
+            <field id="DtTmCreated"><![CDATA[2022/04/08 09:11:16]]></field>
+            <link id="UserCreated" linkfield="~Name"><![CDATA[Administrator]]></link>
+            <field id="DtTmModifd"><![CDATA[2022/04/08 09:11:16]]></field>
+            <link id="UserModifd" linkfield="~Name"><![CDATA[Administrator]]></link>
+            <link id="Month" linkfield="Code"><![CDATA[03]]></link>
+            <field id="DateYear"><![CDATA[2022]]></field>
+          </record>
+        </template>
+        <field id="Pages"><![CDATA[112]]></field>
+        <field id="Abstracts"><![CDATA[The time is now to examine the nation’s capacity to help guide students in gaining access to, paying for, and graduating from college. College promise programs have served as an excellent model. But because a uniform, national college promise model would not adequately serve the estimated 20 million students in postsecondary education, ETS and College Promise launched an effort to expand the work on college promise programs to identify ecosystems of support for specific student populations. In 2021, we invited scholars, practitioners, and student representatives to join a design team and cocreate the college promise program for their student populations: first-generation students, youth in or aged out of foster care, students with disabilities, student parents, and students needing academic support. In multiple panel discussions, other colleagues reviewed the ecosystem designs, focusing on college promise programs in general, the design of the ecosystems of support, or the financing of the ecosystems. Several key themes emerged from the meeting: (a) Although the design teams focused on one aspect of a student’s life, they stressed the importance of focusing on the intersectionality of their identities; (b) terminology and definitions are important not only for policy and practice reasons but for the messages they send to students about inclusion; (c) financing a college education is more than paying tuition and fees; (d) enhanced data collection will support research, policy, and practice; and (e) developing a college promise program requires a focus on both students and postsecondary institutions.]]></field>
+        <link id="MatType" linkfield="Code"><![CDATA[n/a]]></link>
+        <link id="Language" linkfield="Code"><![CDATA[n/a]]></link>
+        <field id="SeriesNum"><![CDATA[0]]></field>
+        <field id="Archive"><![CDATA[False]]></field>
+		<field id="TitleAgg"><![CDATA[Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations]]></field>
+        <field id="AuthorAgg"><![CDATA[Millett, Catherine M.]]></field>
+        <field id="SubAgg"><![CDATA[College Promise Programs Postsecondary Education Ecosystems College Students Community College Students Adult Students Nontraditional Students Disability Groups First Generation College Students Foster Children Parents Family Needs Child Care Academic Support Services Introductory Courses Remedial Education Access to Education Degree Completion Workforce Readiness Inclusion Equity Paying For College Tuition Funding Student Financial Aid Financial Support Technology Support Services Education Policy Research]]></field>
+        <field id="fctSubject"><![CDATA[Remedial Education]]></field>
+        <field id="fctSubject"><![CDATA[Education Policy Research]]></field>
+        <field id="fctSubject"><![CDATA[First Generation College Students]]></field>
+        <field id="fctSubject"><![CDATA[Tuition]]></field>
+        <field id="fctSubject"><![CDATA[Access to Education]]></field>
+        <field id="fctSubject"><![CDATA[Workforce Readiness]]></field>
+        <field id="fctSubject"><![CDATA[Introductory Courses]]></field>
+        <field id="fctSubject"><![CDATA[College Students]]></field>
+        <field id="fctSubject"><![CDATA[Funding]]></field>
+        <field id="fctSubject"><![CDATA[Degree Completion]]></field>
+        <field id="fctSubject"><![CDATA[Student Financial Aid]]></field>
+        <field id="fctSubject"><![CDATA[Equity]]></field>
+        <field id="fctSubject"><![CDATA[Community College Students]]></field>
+        <field id="fctSubject"><![CDATA[College Promise Programs]]></field>
+        <field id="fctSubject"><![CDATA[Financial Support]]></field>
+        <field id="fctSubject"><![CDATA[Paying For College]]></field>
+        <field id="fctSubject"><![CDATA[Support Services]]></field>
+        <field id="fctSubject"><![CDATA[Disability Groups]]></field>
+        <field id="fctSubject"><![CDATA[Child Care]]></field>
+        <field id="fctSubject"><![CDATA[Inclusion]]></field>
+        <field id="fctSubject"><![CDATA[Postsecondary Education]]></field>
+        <field id="fctSubject"><![CDATA[Nontraditional Students]]></field>
+        <field id="fctSubject"><![CDATA[Parents]]></field>
+        <field id="fctSubject"><![CDATA[Foster Children]]></field>
+        <field id="fctSubject"><![CDATA[Family Needs]]></field>
+        <field id="fctSubject"><![CDATA[Academic Support Services]]></field>
+        <field id="fctSubject"><![CDATA[Adult Students]]></field>
+        <field id="fctSubject"><![CDATA[Technology]]></field>
+        <field id="fctSubject"><![CDATA[Ecosystems]]></field>
+        <field id="fctAuthor"><![CDATA[Millett, Catherine M.]]></field>
+        <field id="fctMatType"><![CDATA[Not Applicable]]></field>
+        <field id="aggAll"><![CDATA[Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations Millett, Catherine M. College Promise Programs Postsecondary Education Ecosystems College Students Community College Students Adult Students Nontraditional Students Disability Groups First Generation College Students Foster Children Parents Family Needs Child Care Academic Support Services Introductory Courses Remedial Education Access to Education Degree Completion Workforce Readiness Inclusion Equity Paying For College Tuition Funding Student Financial Aid Financial Support Technology Support Services Education Policy Research ETS Research Report ETS Policy Evaluation & Research Center Report The time is now to examine the nation’s capacity to help guide students in gaining access to, paying for, and graduating from college. College promise programs have served as an excellent model. But because a uniform, national college promise model would not adequately serve the estimated 20 million students in postsecondary education, ETS and College Promise launched an effort to expand the work on college promise programs to identify ecosystems of support for specific student populations. In 2021, we invited scholars, practitioners, and student representatives to join a design team and cocreate the college promise program for their student populations: first-generation students, youth in or aged out of foster care, students with disabilities, student parents, and students needing academic support. In multiple panel discussions, other colleagues reviewed the ecosystem designs, focusing on college promise programs in general, the design of the ecosystems of support, or the financing of the ecosystems. Several key themes emerged from the meeting: (a) Although the design teams focused on one aspect of a student’s life, they stressed the importance of focusing on the intersectionality of their identities; (b) terminology and definitions are important not only for policy and practice reasons but for the messages they send to students about inclusion; (c) financing a college education is more than paying tuition and fees; (d) enhanced data collection will support research, policy, and practice; and (e) developing a college promise program requires a focus on both students and postsecondary institutions.]]></field>
+        <field id="aggAuthors"><![CDATA[Millett, Catherine M.]]></field>
+        <field id="aggBasic"><![CDATA[Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations Millett, Catherine M. College Promise Programs Postsecondary Education Ecosystems College Students Community College Students Adult Students Nontraditional Students Disability Groups First Generation College Students Foster Children Parents Family Needs Child Care Academic Support Services Introductory Courses Remedial Education Access to Education Degree Completion Workforce Readiness Inclusion Equity Paying For College Tuition Funding Student Financial Aid Financial Support Technology Support Services Education Policy Research]]></field>
+        <field id="aggTitles"><![CDATA[Expanding Promise: Depicting the Ecosystems of Support and Financial Sustainability for Five College Promise Populations]]></field>
+      </record>
+      <record>
+        <field id="SystemKey"><![CDATA[0e1fc52a-835c-4917-949a-1602418d9709]]></field>
+        <field id="DtTmCreated"><![CDATA[2022/04/08 09:11:16]]></field>
+        <link id="UserCreated" linkfield="~Name"><![CDATA[Administrator]]></link>
+        <field id="DtTmModifd"><![CDATA[2022/04/08 09:40:00]]></field>
+        <link id="UserModifd" linkfield="~Name"><![CDATA[Administrator]]></link>
+        <field id="EAccessKey"><![CDATA[kdxq]]></field>
+        <link id="DocumentTyp" linkfield="Term"><![CDATA[Chapter]]></link>
+        <field id="Title"><![CDATA[[00]Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications]]></field>
+        <link id="Author" linkfield="Term"><![CDATA[Burstein, Jill]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Horbach, Andrea]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Kochmar, Ekaterina]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Laarmann-Quante, Ronja]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Leacock, Claudia]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Madnani, Nitin]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Pilan, Ildiko]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Yannakoudakis, Helen]]></link>
+        <link id="Author" linkfield="Term"><![CDATA[Zesch, Torsten]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Natural Language Processing (NLP)]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Automated Writing Evaluation (AWE)]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Data Analytics]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Text Complexity]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Grammatical Error Detection]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Speech Data Processing]]></link>
+        <link id="Subject" linkfield="Term"><![CDATA[Readability]]></link>
+        <link id="AuthAcro" linkfield="Term"><![CDATA[NLP]]></link>
+        <link id="AuthAcro" linkfield="Term"><![CDATA[AWE]]></link>
+        <field id="Citation"><![CDATA[Proceedings of the Sixteenth Workshop on Innovative Use of NLP for Building Educational Applications, Online Conference, April 20, 2021, pi-ix]]></field>
+        <field id="URL"><![CDATA[https://aclanthology.org/2021.bea-1.0.pdf]]></field>
+		<template id="DateGt" linkfield="DateGrp">
+          <record>
+            <field id="SystemKey"><![CDATA[fa041124-5dc6-41b0-8e35-821c74b7c39b]]></field>
+            <field id="DtTmCreated"><![CDATA[2022/04/08 09:11:16]]></field>
+            <link id="UserCreated" linkfield="~Name"><![CDATA[Administrator]]></link>
+            <field id="DtTmModifd"><![CDATA[2022/04/08 09:11:16]]></field>
+            <link id="UserModifd" linkfield="~Name"><![CDATA[Administrator]]></link>
+            <link id="Month" linkfield="Code"><![CDATA[n/a]]></link>
+            <field id="DateYear"><![CDATA[2021]]></field>
+          </record>
+        </template>
+        <field id="Pages"><![CDATA[10]]></field>
+        <link id="MatType" linkfield="Code"><![CDATA[n/a]]></link>
+        <link id="Language" linkfield="Code"><![CDATA[n/a]]></link>
+        <field id="SeriesNum"><![CDATA[0]]></field>
+        <field id="Archive"><![CDATA[False]]></field>
+        <field id="TitleAgg"><![CDATA[Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications NLP AWE]]></field>
+        <field id="AuthorAgg"><![CDATA[Burstein, Jill Horbach, Andrea Kochmar, Ekaterina Laarmann-Quante, Ronja Leacock, Claudia Madnani, Nitin Pilan, Ildiko Yannakoudakis, Helen Zesch, Torsten]]></field>
+        <field id="SubAgg"><![CDATA[NLP AWE Natural Language Processing (NLP) Automated Writing Evaluation (AWE) Data Analytics Text Complexity Grammatical Error Detection Speech Data Processing Readability]]></field>
+        <field id="fctSubject"><![CDATA[Speech Data Processing]]></field>
+        <field id="fctSubject"><![CDATA[Automated Writing Evaluation (AWE)]]></field>
+        <field id="fctSubject"><![CDATA[Grammatical Error Detection]]></field>
+        <field id="fctSubject"><![CDATA[Readability]]></field>
+        <field id="fctSubject"><![CDATA[Natural Language Processing (NLP)]]></field>
+        <field id="fctSubject"><![CDATA[Text Complexity]]></field>
+        <field id="fctSubject"><![CDATA[Data Analytics]]></field>
+        <field id="fctAuthor"><![CDATA[Leacock, Claudia]]></field>
+        <field id="fctAuthor"><![CDATA[Pilan, Ildiko]]></field>
+        <field id="fctAuthor"><![CDATA[Kochmar, Ekaterina]]></field>
+        <field id="fctAuthor"><![CDATA[Madnani, Nitin]]></field>
+        <field id="fctAuthor"><![CDATA[Horbach, Andrea]]></field>
+        <field id="fctAuthor"><![CDATA[Burstein, Jill]]></field>
+        <field id="fctAuthor"><![CDATA[Yannakoudakis, Helen]]></field>
+        <field id="fctAuthor"><![CDATA[Laarmann-Quante, Ronja]]></field>
+        <field id="fctAuthor"><![CDATA[Zesch, Torsten]]></field>
+        <field id="fctMatType"><![CDATA[Not Applicable]]></field>
+        <field id="aggAll"><![CDATA[Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications Burstein, Jill Horbach, Andrea Kochmar, Ekaterina Laarmann-Quante, Ronja Leacock, Claudia Madnani, Nitin Pilan, Ildiko Yannakoudakis, Helen Zesch, Torsten Natural Language Processing (NLP) Automated Writing Evaluation (AWE) Data Analytics Text Complexity Grammatical Error Detection Speech Data Processing Readability NLP AWE Proceedings of the Sixteenth Workshop on Innovative Use of NLP for Building Educational Applications, Online Conference, April 20, 2021, pi-ix]]></field>
+        <field id="aggAuthors"><![CDATA[Burstein, Jill Horbach, Andrea Kochmar, Ekaterina Laarmann-Quante, Ronja Leacock, Claudia Madnani, Nitin Pilan, Ildiko Yannakoudakis, Helen Zesch, Torsten]]></field>
+        <field id="aggBasic"><![CDATA[Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications Burstein, Jill Horbach, Andrea Kochmar, Ekaterina Laarmann-Quante, Ronja Leacock, Claudia Madnani, Nitin Pilan, Ildiko Yannakoudakis, Helen Zesch, Torsten Natural Language Processing (NLP) Automated Writing Evaluation (AWE) Data Analytics Text Complexity Grammatical Error Detection Speech Data Processing Readability NLP AWE]]></field>
+        <field id="aggTitles"><![CDATA[Proceedings of the 16th Workshop on Innovative Use of NLP for Building Educational Applications]]></field>
+      </record>
+    </template>
+  </import>
+</sydney>
