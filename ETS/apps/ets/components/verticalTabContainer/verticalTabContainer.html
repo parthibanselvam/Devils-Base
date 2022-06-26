@@ -1,0 +1,36 @@
+<sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+<sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = multifieldMap.isEmpty,classAppend='cmp-text'}"></sly>
+
+<div class="cmp-container--body">
+ <article class="vertical-tab-container m-t70x40 m-b70x40">
+  <nav class="vertical-tab-container__navigation">
+    <p class="vertical-tab-container__label label-title d-none d-md-flex">${properties.title}</p>
+    <ul class="nav flex-column d-none d-md-flex" id="myTab" role="tablist" aria-orientation="vertical">
+        <sly data-sly-list.tab="${multifieldMap.tab.listChildren}">
+            <sly data-sly-test="${tab.tabname}">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link title21-28 ${tabList.first?'active':''}" id="${currentNode.getName}-${tab.name}-tab" data-bs-toggle="tab" data-bs-target="#${currentNode.getName}-${tab.name}" type="button" role="tab" aria-controls="home" aria-selected="true">
+                      <span class="nav-item--seperator">
+                        ${tab.tabname}
+                      </span>
+                  </button>
+                </li>
+            </sly>
+        </sly>
+      </ul>
+    </nav>
+      <div class="vertical-tab-container__tab-value tab-content" id="myTabContent">
+        <p class="vertical-tab-container__label label-title d-sm-flex d-md-none d-lg-none">${properties.title}</p>
+        <sly data-sly-list.tab="${multifieldMap.tab.listChildren}">
+        <div class="vertical-tab-container--pane tab-pane fade ${tabList.first?'show active':''}" id="${currentNode.getName}-${tab.name}" role="tabpanel" aria-labelledby="home-tab">
+
+            <sly data-sly-use.htmlVariation="/apps/ets/components/verticalTabContainer/v1/verticalTabContainer/content/content.html">
+                <sly data-sly-call="${htmlVariation.mobileTitle @dataObject=tab.tabname}"></sly>
+            </sly>
+            <sly data-sly-resource="${@path=tab.name,  resourceType ='ets/components/verticalTabContainer/content'}"></sly>
+        </div>
+        </sly>
+      </div>
+    </article>
+  </div>

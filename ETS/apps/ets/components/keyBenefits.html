@@ -1,0 +1,37 @@
+<sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+<sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = multifieldMap.isEmpty, classAppend='cmp-text'}"></sly>
+
+<section>
+    <div class="key-benefits__layout" style="--key-benefit-container-color: ${properties.color @context='styleString'}">
+        <div class="cmp-container--body">
+            <div class="${properties.variant=='withSeparator'?'key-benefits__container':'key-benefits__container--without-separator'}">
+                <div data-sly-test="${properties.title}" class="key-benefits__title">
+                    <span>${properties.title}</span>
+                </div>
+                <div class="key-benefits__card card-group"
+                    data-sly-list.option="${multifieldMap.benefits.listChildren}">
+                    <div class="key-benefits__card__container card">
+                        <sly data-sly-use.imgMetadata="${'org.ets.core.models.DamMetadataModel' @imgPath=option.icon}"></sly>
+                        <img class="key-benefits__img" src="${option.icon}" alt="${option.alt ? option.alt : imgMetadata.alttxt}">
+                        <span class="${properties.variant=='withSeparator'?'title21-28':'body-text'}">${option.text}</span>
+                    </div>
+                    <div class="key-benefits__card__separator"
+                        data-sly-test="${(properties.variant=='withSeparator') && !optionList.last}"></div>
+                </div>
+                <div class="key-benefits__cta-container">
+                    <a data-sly-test="${properties.ctaButtonLabel && properties.ctaButtonLink}"
+                        class="cta-btn-primary"
+                       data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=properties.ctaButtonLink}"
+                       href="${linkValidate.link}"
+                        target="${properties.newTab1 ? '_blank' : ''}">${properties.ctaButtonLabel}</a>
+                    <a data-sly-test="${properties.ctaText && properties.ctaLink}"
+                        class="quotes-banner-link-btn"
+                       data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=properties.ctaLink}"
+                       href="${linkValidate.link}"
+                        target="${properties.newTab2 ? '_blank' : ''}">${properties.ctaText}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,101 @@
+<sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+<sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = multifieldMap.isEmpty,classAppend='cmp-text'}"></sly>
+<section>
+    <div class="cmp-container--body">
+        <div data-sly-test="${properties.cardtype=='white'}" class="card-group info-card mt-${properties.marginTop} mb-${properties.marginBottom}" style="--info-card-alignment: ${properties.cardalign || 'left' @ context='styleString'}">
+            <sly data-sly-list.card="${multifieldMap.cards1.listChildren}">
+                <div data-sly-test="${card.title1}" class="card info-card-container info-card-white" data-inviewport="scale-in">
+                    <div class="card-body">
+                        <div class="heading5">${card.title1}</div>
+                        <div data-sly-test="${card.title1}" class="card-heading-seperator">
+                            <span class="card-heading-seperator-stroke-big"></span>
+                            <span class="card-heading-seperator-stroke-small"></span>
+                        </div>
+                        <div data-sly-test="${card.description1}" class="info-card-container-content body-text">${card.description1 @context = 'html'}</div>
+                    </div>
+                    <div class="card-footer">
+                        <div data-sly-test="${card.ctabutton1 || card.linktext1}" class="article-banner-button-band m-0">
+                            <sly data-sly-test="${card.ctatype1=='cta-with-link'}">
+                            <a data-sly-test="${card.ctabutton1 && !card.spa}" class="cta-btn-primary"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.ctalink1}"
+                               href="${linkValidate.link}" target="${card.newtabcta1 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel1}">${card.ctabutton1}</a>
+                            <a data-sly-test="${card.ctabutton1 && card.spa}" href="javascript:void(0)" class="cta-btn-primary panelJourney"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.ctalink1}"
+                               data-panel-path="${linkValidate.link}" aria-label="${card.ctaButtonAriaLabel1}">${card.ctabutton1}</a>
+                            </sly>
+                            <sly data-sly-test="${card.ctatype1=='cta-with-asset'}">
+                            <a data-sly-test="${card.ctabutton1 && !card.spa}" class="cta-btn-primary" href="${card.assetpath1}" download target="${card.newtabcta1 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel1}">${card.ctabutton1}</a>
+                            <a data-sly-test="${card.ctabutton1 && card.spa}" href="javascript:void(0)" class="cta-btn-primary panelJourney" data-panel-path="${card.assetpath1 }" aria-label="${card.ctaButtonAriaLabel1}">${card.ctabutton1}</a>
+                            </sly>
+                            <a data-sly-test="${card.linktext1}" class="ets-text-link"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.textlink1}"
+                               href="${linkValidate.link}" target="${card.newtabtext1 ? '_blank' : ''}" aria-label="${card.ctaLinkAriaLabel1}">${card.linktext1}</a>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </div>
+        <div data-sly-test="${properties.cardtype=='translucent'}" class="card-group info-card" style="--info-card-alignment: ${properties.cardalign || 'left' @ context='styleString'}">
+            <sly data-sly-list.card="${multifieldMap.cards2.listChildren}">
+                <div data-sly-test="${card.title2}" class="card info-card-container info-card-translucent" data-inviewport="scale-in">
+                    <div class="card-body">
+                        <div class="heading5">${card.title2}</div>
+                        <div data-sly-test="${card.title2}" class="card-heading-seperator">
+                            <span class="card-heading-seperator-stroke-big"></span>
+                            <span class="card-heading-seperator-stroke-small"></span>
+                        </div>
+                        <div data-sly-test="${card.description2}" class="info-card-container-content body-text">${card.description2 @context = 'html'}</div>
+                    </div>
+                    <div class="card-footer">
+                        <div data-sly-test="${card.ctabutton2 || card.linktext2}" class="article-banner-button-band m-0">
+                            <sly data-sly-test="${card.ctatype2=='cta-with-link'}">
+                            <a data-sly-test="${card.ctabutton2}" class="cta-btn-primary"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.ctalink2}"
+                               href="${linkValidate.link}" target="${card.newtabcta2 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel2}">${card.ctabutton2}</a>
+                            </sly>
+                            <sly data-sly-test="${card.ctatype2=='cta-with-asset'}">
+                            <a data-sly-test="${card.ctabutton2}" class="cta-btn-primary" href="${card.assetpath2}" download target="${card.newtabcta2 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel2}">${card.ctabutton2}</a>
+                            </sly>
+                            <a data-sly-test="${card.linktext2}" class="ets-text-link"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.textlink2}"
+                               href="${linkValidate.link}" target="${card.newtabtext2 ? '_blank' : ''}" aria-label="${card.ctaLinkAriaLabel2}">${card.linktext2}</a>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </div>
+		<div data-sly-test="${properties.cardtype=='no-background'}" style="--info-card-alignment: ${properties.cardalign || 'left' @ context='styleString'}">
+            <div class="card-group bordered-info-card">
+                <sly data-sly-list.card="${multifieldMap.cards3.listChildren}">
+                    <div data-sly-test="${card.title3}" class="card bordered-info-card-container" data-inviewport="scale-in">
+                        <div class="card-body">
+                            <span data-sly-test="${card.headingtext3}" class="date">${card.headingtext3}</span>
+                            <div class="heading5">${card.title3}</div>
+                            <div data-sly-test="${card.title3}" class="card-heading-seperator">
+                                <span class="card-heading-seperator-stroke-big"></span>
+                                <span class="card-heading-seperator-stroke-small"></span>
+                            </div>
+                            <div data-sly-test="${card.description3}" class="info-card-container-content body-text">${card.description3 @context = 'html'}</div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="article-banner-button-band m-0">
+                                <sly data-sly-test="${card.ctatype3=='cta-with-link'}">
+                                <a data-sly-test="${card.ctabutton3}" class="cta-btn-primary"
+                                   data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.ctalink3}"
+                                   href="${linkValidate.link}" target="${card.newtabcta3 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel3}">${card.ctabutton3}</a>
+                                </sly>
+                                <sly data-sly-test="${card.ctatype3=='cta-with-asset'}">
+                                <a data-sly-test="${card.ctabutton3}" class="cta-btn-primary" href="${card.assetpath3}" download target="${card.newtabcta3 ? '_blank' : ''}" aria-label="${card.ctaButtonAriaLabel3}">${card.ctabutton3}</a>
+                                </sly>
+                                <a data-sly-test="${card.linktext3}" class="ets-text-link"
+                                   data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.textlink3}"
+                                   href="${linkValidate.link}" target="${card.newtabtext3 ? '_blank' : ''}" aria-label="${card.ctaLinkAriaLabel3}">${card.linktext3}</a>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,42 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = !properties.color, classAppend='cmp-text'}"></sly>
+<sly data-sly-use.multifieldList="org.ets.core.models.NestedMultifieldListModel"></sly>
+<div class="horizontal-menu-component">
+    <div class="cmp-container--body">
+        <div id="h-nav" data-current-page-path="${currentPage.getPath}" data-dynamic-path="${properties.dynamicPath}" class="horizontal-menu" style="--horizontal-menu-background:${properties.color @context='styleToken'}" data-sly-list.primary="${multifieldList.getSecondaryList}">
+            <a class="cta-btn-bg-tab ${primary.dynamicLink?'dynamic-link':''} ${primary.isActive?'active':''}"
+               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=primary.tabLink1}"
+               href="${linkValidate.link}" target="${primary.newTab1 ? '_blank' : ''}" aria-label="${primary.secondaryAriaLabel}" aria-current="${primary.isActive ? 'true':''}">${primary.tabName1}</a>
+        </div>
+        <div data-sly-test="${multifieldList.getTertiaryList}" class="mobile-horizontal-menu-dropdown d-md-none">
+            <div class="dropdown">
+                <div class="btn-secondary dropdown-toggle" data-bs-display="static" id="HorizontalDropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    <input type="text" placeholder="" list="sideMenuList" name="menu" onkeydown="return false">
+                    <button type="submit"><i class="dropdown-downarrow"></i></button>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="HorizontalDropdownMenu">
+                    <sly data-sly-list.nested="${multifieldList.getTertiaryList}">
+                        <li><a class="horizontal-menu-dropdown dropdown-item body-text ${(nested.tabLink2==currentPage.getPath)?'horizontal-menu-dropdown-item-active':''}"
+                               data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=nested.tabLink2}"
+                               href="${linkValidate.link}" target="${nested.newTab2 ? '_blank' : ''}" aria-label="${nested.tertiaryAriaLabel}"
+                               aria-current="${(nested.tabLink2==currentPage.getPath) ? 'true':''}">${nested.tabName2}</a></li>
+                    </sly>
+                </ul>
+            </div>
+        </div>
+
+        <div data-sly-list="${properties.dynamicPath}" class="horizontal-menu dynamic-menu d-none pb-0" style="--horizontal-menu-background:inherit">
+            <sly data-sly-list.child="${currentPage.getParent.listChildren}">
+                <a class="cta-btn-white-bg-tab ${(child.getPath==currentPage.getPath)?'active':''}" href="${child.getPath @extension='html'}">${child.getTitle}</a>
+            </sly>
+        </div>
+        <sly data-sly-test.tertiary="${multifieldList.getTertiaryList}"></sly>
+        <div data-sly-test="${tertiary}" class="horizontal-menu d-none d-md-flex pb-0" style="--horizontal-menu-background:inherit">
+            <sly data-sly-list.nested="${multifieldList.getTertiaryList}">
+                <a class="cta-btn-white-bg-tab ${(nested.tabLink2==currentPage.getPath)?'active':''}"
+                   data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=nested.tabLink2}"
+                   href="${linkValidate.link}" target="${nested.newTab2 ? '_blank' : ''}" aria-label="${nested.tertiaryAriaLabel}"
+                   aria-current="${(nested.tabLink2==currentPage.getPath) ? 'true':''}">${nested.tabName2}</a>
+            </sly>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-sly-call="${templates.placeholder @ isEmpty=!properties.sdesc,classAppend='cmp-text'}"></sly>
+<section>
+    <div class="cmp-container--body position-relative">
+        <!--<div class="bannerLeftParallex">
+                <img src="${properties.leftpill}" alt="leftpill"/>
+        </div>-->
+    </div>
+    <div data-sly-test="${properties.altText || properties.sdesc}"  class="banner-layout">
+        <div class="cmp-container--body position-relative">
+            <div class="bannerRightParallex banner-pill-half">
+                <img src="${properties.righthalfpill}" alt=""/>
+            </div>
+            <div class="bannerRightParallex banner-pill-large">
+                <img src="${properties.rightfullpill}" alt=""/>
+            </div>
+            <div data-sly-test="${properties.bannerstyles=='banner-with-desc'}" class="banner-layout-container">
+                <h1 class="heading2">${properties.sdesc @context='html'}</h1>
+                <p class="body-text">${properties.desc @context='html'}</p>
+            </div>
+        </div>
+    </div>
+    <div data-sly-test="${properties.bannerstyles=='banner-with-image'}" class="banner-image col-12" alt="${properties.altText}" style="--banner-backgorund-image: url('${properties.fileReference @ context='styleString'}');">
+    </div>
+</section>

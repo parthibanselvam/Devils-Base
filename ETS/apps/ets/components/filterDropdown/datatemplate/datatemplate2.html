@@ -1,0 +1,34 @@
+<template data-sly-template.variation2="${@ inputData}">
+    <section class="gre-institution-filter cmp-container--body">
+        <div data-sly-test="${properties.sectionTitle}" class="gre-institution-filter__title">${properties.sectionTitle @context='html'}</div>
+        <div class="field-group gre-institution-filter__filter">
+            <div class="select">
+                <form >
+                    <div class="dropdown">
+                        <div class="dropdown-toggle" type="button"  id="gre-dropdown-institution" data-bs-auto-close="true" data-bs-toggle="dropdown" aria-haspopup="true"  data-bs-hover="dropdown" aria-expanded="false" select-on-tab = "true">
+                            <i class="score-requirement__select__search-icon"><img src="/content/dam/ets-org/icons/commons/searchIcon_blue.svg" alt="search_icon"></i>
+                            <input type="text" class="jAuto form-control" tabindex="0" readonly
+                                   placeholder="${properties.placeholderText}" aria-label="${properties.inputAriaLabel}" autocomplete="off">
+                            <button class="ets-dropdown-button"><img class = "down-arrow" src="/content/dam/ets-org/icons/commons/down-arrow-white.svg" alt="down-arrow"> <img class="up-arrow" src="/content/dam/ets-org/icons/commons/up_arrow_white.svg" alt="up-arrow"> </button>
+                        </div>
+                        <div class="dropdown-menu"  aria-labelledby="gre-dropdown-institution" id = "gre-institution" data-gre-institution-path="${inputData}">
+                            <div class="list-autocomplete"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <table class="gre-institution-filter__table">
+            <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody class="gre-institution-filter__table__content">
+
+            </tbody>
+        </table>
+        <div class="gre-institution-filter__footnote"></div>
+    </section>
+</template>

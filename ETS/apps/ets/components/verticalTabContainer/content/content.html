@@ -1,0 +1,231 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = !properties.contenttype,classAppend='cmp-text'}"></sly>
+
+<div>
+    <template data-sly-template.mobileTitle="${@ dataObject}">
+        <p class="title21-28 vertical-tab-container-sm-heading d-sm-flex d-md-none d-lg-none">${dataObject}</p>
+    </template>
+    <sly data-sly-test="${properties.contenttype=='text-asset'}">
+        <sly data-sly-test="${properties.assettype1=='video'}">
+        <sly data-sly-test="${properties.videotype1=='damvideo'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                        <video controls id="video-element" src="${properties.videopath1}" preload="auto" alt="logo1" poster="${properties.thumbnailpath1}"></video>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        <sly data-sly-test="${properties.videotype1=='kalturavideo'}">
+                        <sly data-sly-test="${!inheritedPageProperties.partnerID || !inheritedPageProperties.embedID}">
+                            *******************!!!KALTURA CONFIGURATIONS ARE MISSING. PLEASE CONFIGURE THEM TO VIEW THE VIDEO!!!*******************
+                        </sly>
+                        <div data-sly-test="${properties.videoid1 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}" class="cmp-container--body">
+                            <section class="video-container row ${properties.layoutStyle}">
+                                <div class="video-container__video ratio ratio-16x9">
+                                    <div id="kaltura_player_ts_${currentNode.getName}"></div>
+                                </div>
+
+                           <div data-sly-test="${properties.link}" class="video-link">
+                            <a data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=properties.link}"
+                               href="${linkValidate.link}" class="view-transcript" target="${properties.newTab ? '_blank' : ''}">${properties.text}</a>
+                           </div>
+                            </section>
+                            <div data-sly-test="${properties.caption1}" class="video-caption">${properties.caption1}</div>
+                        </div>
+
+                        <sly data-sly-test="${properties.videoid1 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}">
+                            <!-- start embed -->
+                            <!-- kaltura api -->
+                            <script>
+                                kWidget.thumbEmbed({
+                                    "targetId": "kaltura_player_ts_${currentNode.getName @ context='scriptString'}",
+                                    "wid": "${inheritedPageProperties.partnerID @ context='scriptString'}",
+                                    "uiconf_id": ${inheritedPageProperties.embedID @ context='scriptString'},
+                                    "flashvars": {},
+                                    "entry_id": "${properties.videoid1 @ context='scriptString'}"
+                                });
+                            </script>
+                            <!-- kaltura api -->
+                            <!-- VIDEO START -->
+                        </sly>
+        </sly>
+        <sly data-sly-test="${properties.videotype1=='external'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                    <iframe id="video-element" src="${properties.videolink1}" allow="fullscreen;autoplay" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        </sly>
+        <sly data-sly-test="${properties.assettype1=='image'}">    
+            <img src="${properties.imagepath1}" alt="${properties.altText1}" />
+        </sly>
+        <p class="vertical-tab-container__tabcontent-value">${properties.description1 @context='html'}</p>
+        <a data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=properties.link1}"
+           href="${linkValidate.link}" class="cta-text-link text-start" target="${properties.newTab1?'_blank':''}">${properties.text1}</a>
+    </sly>
+    <sly data-sly-test="${properties.contenttype=='twoColumn-asset'}"> 
+        <!--/* For two coloum component*/-->
+        <sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+        <sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+        <sly data-sly-test="${properties.assettype2=='video'}">
+            <sly data-sly-test="${properties.videotype2=='damvideo'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                        <video controls id="video-element" src="${properties.videopath2}" preload="auto" alt="logo2" poster="${properties.thumbnailpath2}"></video>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        <sly data-sly-test="${properties.videotype2=='kalturavideo'}">
+        <sly data-sly-test="${!inheritedPageProperties.partnerID || !inheritedPageProperties.embedID}">
+                            *******************!!!KALTURA CONFIGURATIONS ARE MISSING. PLEASE CONFIGURE THEM TO VIEW THE VIDEO!!!*******************
+                        </sly>
+                        <div data-sly-test="${properties.videoid2 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}" class="cmp-container--body">
+                            <section class="video-container row ${properties.layoutStyle}">
+                                <div class="video-container__video ratio ratio-16x9">
+                                    <div id="kaltura_player_ts_${currentNode.getName}"></div>
+                                </div>
+                            </section>
+                            <div data-sly-test="${properties.caption2}" class="video-caption">${properties.caption2}</div>
+                        </div>
+
+                        <sly data-sly-test="${properties.videoid2 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}">
+                            <!-- start embed -->
+                            <!-- kaltura api -->
+							<script>
+        kWidget.thumbEmbed({
+            "targetId": "kaltura_player_ts_${currentNode.getName @ context='scriptString'}",
+            "wid": "${inheritedPageProperties.partnerID @ context='scriptString'}",
+            "uiconf_id": ${inheritedPageProperties.embedID @ context='scriptString'},
+            "flashvars": {},
+            "entry_id": "${properties.videoid2 @ context='scriptString'}"
+        });
+    </script>
+                            <!-- kaltura api -->
+                            <!-- VIDEO START -->
+                        </sly>
+        </sly>
+        <sly data-sly-test="${properties.videotype2=='external'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                    <iframe id="video-element" src="${properties.videolink2}" allow="fullscreen;autoplay" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        </sly>
+        <sly data-sly-test="${properties.assettype2=='image'}">    
+            <img src="${properties.imagepath2}" alt="${properties.altText2}" />
+        </sly>
+        <div class="vertical-tab-container__two-panel d-flex" data-sly-list.sections="${multifieldMap.sections.listChildren}">
+            <div class="vertical-tab-container__two-panel__wrapper">
+                <div class="vertical-tab-container__two-panel__body">
+                    <p class="vertical-tab-container__two-panel__body__subheading">${sections.title}</p>
+                    <p class="vertical-tab-container__two-panel__body__content">${sections.description2 @context='html'}</p>
+                </div>
+                <div class="vertical-tab-container__two-panel__footer">
+                    <a data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=sections.link2}"
+                       href="${linkValidate.link}" class="cta-text-link text-start" target="${properties.newTab2?'_blank':''}">${sections.text2}</a>
+                </div>
+            </div>
+        </div>
+    </sly>
+    <sly data-sly-test="${properties.contenttype=='submenu-asset'}"> 
+    <!-- for separator component-->
+        <sly data-sly-test="${properties.assettype3=='video'}">
+            <sly data-sly-test="${properties.videotype3=='damvideo'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                        <video controls id="video-element" src="${properties.videopath3}" preload="auto" alt="logo3" poster="${properties.thumbnailpath3}"></video>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        <sly data-sly-test="${properties.videotype3=='kalturavideo'}">
+        <sly data-sly-test="${!inheritedPageProperties.partnerID || !inheritedPageProperties.embedID}">
+                            *******************!!!KALTURA CONFIGURATIONS ARE MISSING. PLEASE CONFIGURE THEM TO VIEW THE VIDEO!!!*******************
+                        </sly>
+                        <div data-sly-test="${properties.videoid3 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}" class="cmp-container--body">
+                            <section class="video-container row ${properties.layoutStyle}">
+                                <div class="video-container__video ratio ratio-16x9">
+                                    <div id="kaltura_player_ts_${currentNode.getName}"></div>
+                                </div>
+                            </section>
+                            <div data-sly-test="${properties.caption3}" class="video-caption">${properties.caption3}</div>
+                        </div>
+
+                        <sly data-sly-test="${properties.videoid3 && inheritedPageProperties.partnerID && inheritedPageProperties.embedID}">
+                            <!-- start embed -->
+                            <!-- kaltura api -->
+                            <script>
+        kWidget.thumbEmbed({
+            "targetId": "kaltura_player_ts_${currentNode.getName @ context='scriptString'}",
+            "wid": "${inheritedPageProperties.partnerID @ context='scriptString'}",
+            "uiconf_id": ${inheritedPageProperties.embedID @ context='scriptString'},
+            "flashvars": {},
+            "entry_id": "${properties.videoid3 @ context='scriptString'}"
+        });
+    </script>
+                            <!-- kaltura api -->
+                            <!-- VIDEO START -->
+                        </sly>
+        </sly>
+        <sly data-sly-test="${properties.videotype3=='external'}">
+            <section class="video-container row">
+                <div class="video-container__video ratio ratio-16x9">
+                    <div id="video-container_player">
+                    <iframe id="video-element" src="${properties.videolink3}" allow="fullscreen;autoplay" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </section>
+        </sly>
+        </sly>
+        <sly data-sly-test="${properties.assettype3=='image'}">    
+            <img src="${properties.imagepath3}" alt="${properties.altText3}" />
+        </sly>
+
+        <article class="tabbed-content tabs-side">
+            <nav class="tabs">
+                <ul class="p-0">
+                    <sly data-sly-list.childResource="${resource.getChildren}">
+                        <sly data-sly-list.sublinkResource="${childResource.getChildren}" data-sly-test.submenu="${childResource}">
+                            <li>
+                                <a href="#${currentNode.getName}_${sublinkResource.name}_tab" class="${sublinkResourceList.first?'active':''}">
+                                    <span>${sublinkResource.ptext}</span>
+                                    <span class="item-arrow">
+                                        <img src='/content/dam/ets-org/icons/commons/right-arrow.svg' alt=""/>
+                                    </span>
+                                </a>
+                            </li>
+                        </sly>
+                    </sly>
+                </ul>
+            </nav>
+            <sly data-sly-list.sublinkItemResource="${submenu.getChildren}">
+            <section id="${currentNode.getName}_${sublinkItemResource.name}_tab" class="item ${sublinkItemResourceList.first?'active active-link':''}"
+                data-title="${sublinkItemResource.ptext}">
+                <span class="item-arrow">
+                  <img src='/content/dam/ets-org/icons/commons/right-arrow.svg' alt=""/>
+                  <img class="onactive" src='/content/dam/ets-org/icons/commons/down_arrow.svg' alt=""/>
+                </span>
+                <div class="item-content">
+                    <ul>
+                        <sly data-sly-list.itemResource="${sublinkItemResource.getChildren}">
+                        <sly data-sly-list.menu="${itemResource.getChildren}">
+                            <li><a data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=menu.clink}"
+                                   href="${linkValidate.link}" target="${menu.cnewTab?'_blank':''}">${menu.ctext}</a></li>
+                        </sly>
+                        </sly>
+                    </ul>
+                </div>
+            </section>
+            </sly>
+        </article>
+    </sly>
+</div>

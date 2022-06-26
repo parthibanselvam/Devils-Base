@@ -1,0 +1,13 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = !properties.json || !properties.dataTemplate, classAppend='cmp-text'}"></sly>
+
+<sly data-sly-test="${properties.dataTemplate == 'contactus'}" data-sly-use.htmlVariation="/apps/ets/components/filterdropdown/datatemplate/datatemplate1.html">
+    <sly data-sly-call="${htmlVariation.variation1 @inputData=properties.json}"></sly>
+</sly>
+
+<sly data-sly-test="${properties.dataTemplate == 'institutions'}" data-sly-use.htmlVariation="/apps/ets/components/filterdropdown/datatemplate/datatemplate2.html">
+    <sly data-sly-call="${htmlVariation.variation2 @inputData=properties.json}"></sly>
+</sly>
+
+<sly data-sly-test="${properties.dataTemplate == 'mbaPrograms'}" data-sly-use.htmlVariation="/apps/ets/components/filterdropdown/datatemplate/datatemplate3.html">
+    <sly data-sly-call="${htmlVariation.variation3 @inputData=properties.json}"></sly>
+</sly>

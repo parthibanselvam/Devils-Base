@@ -1,0 +1,68 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+    data-sly-call="${templates.placeholder @ isEmpty = !properties.description,classAppend='cmp-text'}"></sly>
+<sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+<sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+<div class="heroBannerBackground">
+    <div class="cmp-container--body position-relative cmp-container--body">
+        <div class="home-banner-pills">
+            <img class="img-pill" src="${properties.animationimage}" alt="${properties.altText}">
+            <span class="rellax rellax-1" data-rellax-speed="1"><img src="/content/dam/ets-org/icons/rellax-image/Rectangle-65.svg" alt=""></span>
+            <span class="rellax rellax-2" data-rellax-speed="1.3"><img src="/content/dam/ets-org/icons/rellax-image/Rectangle-61.svg" alt=""></span>
+            <span class="rellax rellax-3" data-rellax-speed="1.6"><img src="/content/dam/ets-org/icons/rellax-image/blue-pill1.svg" alt=""></span>
+            <span class="rellax rellax-4" data-rellax-speed="2.2"><img src="/content/dam/ets-org/icons/rellax-image/Group-999.svg" alt=""></span>
+            <span class="rellax rellax-5" data-rellax-speed="2.5"><img src="/content/dam/ets-org/icons/rellax-image/Group-995.svg" alt=""></span>
+            <span class="rellax rellax-6" data-rellax-speed="2.8"><img src="/content/dam/ets-org/icons/rellax-image/set1.svg" alt=""></span>
+            <span class="rellax rellax-7" data-rellax-speed="3.1"><img src="/content/dam/ets-org/icons/rellax-image/Rectangle-104.svg" alt=""></span>
+            <span class="rellax rellax-8" data-rellax-speed="3.4"><img src="/content/dam/ets-org/icons/rellax-image/Group-994.svg" alt=""></span>
+            <span class="rellax rellax-9" data-rellax-speed="1"><img src="/content/dam/ets-org/icons/rellax-image/pills-9.svg" alt=""></span>
+            <span class="rellax rellax-10" data-rellax-speed="2"><img src="/content/dam/ets-org/icons/rellax-image/pills-10.svg" alt=""></span>
+        </div>
+        <div data-sly-test="${properties.description}" class="heroBannerComponent">
+            <div class="row">
+                <div class="mainBannerHeading col-12 col-md-8 col-lg-7 col-xl-6" data-inviewport="${wcmmode.edit?'':'fadeIn'}">
+                    <div class="banner-title">
+                    ${properties.description @context='html'}
+                    </div>
+                </div>
+            </div>
+            <div class="journeyContainer row">
+                <div class="journeyTitle heading5 col-12">
+                    ${properties.title}
+                </div>
+                <div class="journeyTabs col-12">
+                    <ul>
+                        <sly data-sly-list.links="${multifieldMap.cardcategory.listChildren}">
+                            <li class="" data-inviewport="${wcmmode.edit?'':'scale-in'}" data-sly-test="${!links.spa}">
+                                <a class="row"
+                                   data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=links.url}"
+                                   href="${linkValidate.link}" target="${links.target ? '_blank' : ''}" aria-label="${links.linkAriaLabel}">
+                                    <div class="journeyIcons">
+                                        <sly data-sly-use.imgMetadata="${'org.ets.core.models.DamMetadataModel' @imgPath=links.icon}"></sly>
+                                        <img loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${links.icon}" alt="${links.alticon ? links.alticon : imgMetadata.alttxt}">
+                                        <sly data-sly-use.hoverImgMetadata="${'org.ets.core.models.DamMetadataModel' @imgPath=links.hovericon}"></sly>
+                                        <img class="onover" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${links.hovericon}" alt="${links.althover ? links.althover : hoverImgMetadata.alttxt}">
+                                    </div>
+                                    <span class="col-12">${links.cardtitle}</span>
+                                </a>
+                            </li>
+                            <li class="panelJourney" data-inviewport="${wcmmode.edit?'':'scale-in'}" data-panel-path="${links.url}.html" data-sly-test="${links.spa}">
+                               <button class="row">
+                                   <div class="journeyIcons">
+                                        <sly data-sly-use.imgMetadata="${'org.ets.core.models.DamMetadataModel' @imgPath=links.icon}"></sly>
+                                        <img loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${links.icon}" alt="${links.alticon ? links.alticon : imgMetadata.alttxt}">
+                                        <sly data-sly-use.hoverImgMetadata="${'org.ets.core.models.DamMetadataModel' @imgPath=links.hovericon}"></sly>
+                                        <img class="onover" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${links.hovericon}" alt="${links.althover ? links.althover : hoverImgMetadata.alttxt}">
+                                    </div>
+                                   <span class="col-12"> ${links.cardtitle} </span>
+                               </button>
+                            </li>
+                        </sly>
+                    </ul>
+                </div>
+            </div>
+            <div class="viewMoreJourney">
+                ${properties.moreinfo @context='html'}
+            </div>
+        </div>
+    </div>
+</div>

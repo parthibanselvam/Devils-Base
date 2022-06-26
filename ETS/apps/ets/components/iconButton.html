@@ -1,0 +1,27 @@
+<sly data-sly-use.multifieldObj="org.ets.core.models.MultifieldListModel"></sly>
+<sly data-sly-test.multifieldMap=${multifieldObj.getMultifield}></sly>
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html" data-sly-call="${templates.placeholder @ isEmpty = multifieldMap.isEmpty,classAppend='cmp-text'}"></sly>
+<section data-sly-test="${!multifieldMap.isEmpty}" class="icon-button cmp-container--body">
+    <ul>
+        <sly data-sly-list.card="${multifieldMap.cards.listChildren}">
+            <li class="icon-button-list" data-inviewport="scale-in">
+                <sly data-sly-use.linkValidate="${'org.ets.core.models.LinkValidatorModel' @link=card.link}">
+                    <a data-sly-test="${!card.spa}" class="icon-button-list-link" href="${linkValidate.link}" target="${card.newTab ? '_blank' : ''}" aria-label="${card.linkAriaLabel}">
+                        <figure>
+                            <img alt="${card.altText1}" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${card.icon}" />
+                            <img class="onover" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" alt="${card.altText2}" src="${card.hovericon}" />
+                        </figure>
+                        <span data-sly-test="${card.text}" class="icon-button-list-link-text">${card.text}</span>
+                    </a>
+                    <a data-sly-test="${card.spa}" class="icon-button-list-link panelJourney" href="javascript:void(0)" data-panel-path="${linkValidate.link}" target="${card.newTab ? '_blank' : ''}" aria-label="${card.linkAriaLabel}">
+                        <figure>
+                            <img alt="${card.altText1}" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" src="${card.icon}" />
+                            <img class="onover" loading="${currentStyle.disableLazyLoading ? '' : 'lazy'}" alt="${card.altText2}" src="${card.hovericon}" />
+                        </figure>
+                        <span data-sly-test="${card.text}" class="icon-button-list-link-text">${card.text}</span>
+                    </a>
+                </sly>
+            </li>
+        </sly>
+    </ul>
+</section>
