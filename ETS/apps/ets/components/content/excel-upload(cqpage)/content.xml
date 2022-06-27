@@ -67,7 +67,7 @@
                                                             fieldLabel="JSON Storage Directory">
                                                             <items jcr:primaryType="nt:unstructured">
                                                                 <option1
-																	jcr:primaryType="nt:unstructured"
+								    jcr:primaryType="nt:unstructured"
                                                                     text="GRE"
                                                                     value="/content/dam/ets-org/s/gre"/>
                                                                 <option2
@@ -123,7 +123,7 @@
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Contact Us GRE"
                                                                     value="contact_us_list_gre"/>
-																<option5
+								<option5
                                                                     jcr:primaryType="nt:unstructured"
                                                                     text="Contact Us Praxis"
                                                                     value="contact_us_list_praxis"/>
@@ -173,7 +173,7 @@
                                                             name="xls"
                                                             required="{Boolean}true"
                                                             text="Choose File"/>
-															<fileSelected
+							<fileSelected
                                                             granite:class="coral-Heading coral-Heading--4 color--primary font--normal"
                                                             granite:id="selectedFile"
                                                             jcr:primaryType="nt:unstructured"
