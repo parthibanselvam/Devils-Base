@@ -1,7 +1,0 @@
-AEM Local project setup using intelliJ IDE and Adobe Repo: https://www.youtube.com/watch?v=70LL5Lfjy1E
-
-Sling Mocks: https://sling.apache.org/documentation/development/sling-mock.html#adapter-factories-1
-
-Ternary Sightly Condition: https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/concat-in-ternary-condition/td-p/308214
-
-Excel To Json Blog: https://github.com/vsr061/aem-excel-to-json/blob/master/core/src/main/java/com/excel/json/core/servlets/ExcelToJSONServlet.java
