@@ -1,0 +1,21 @@
+Ctrl + Shift + T ~ Searching for a type
+
+Ctrl + O ~ Quick outline
+
+Ctrl + T ~ Quick type hierarchy
+
+F3 ~ Navigate to a method
+
+Ctrl + Shift + G ~ Method invocations
+
+Ctrl + ALT + H ~ Method call hierarchy
+
+Ctrl + H ~ Search console
+
+Ctrl + Spacebar ~ Keyword (e.g., foreach) followed by this shortcut will auto-insert a template
+
+Debugger:
+
+Ctrl + Shift + I ~ View expression value
+
+Ctrl + R ~ Execute till current line (without breakpoint)

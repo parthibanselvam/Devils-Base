@@ -1,0 +1,26 @@
+path=/content/ets-org
+property=sling:resourceType
+property.value=ets/components/articlebanner
+p.limit=-1
+
+==============================================================================================
+
+path=/content/ets-org/language-master/en/home/toefl
+1_property=link
+1_property.value=/content/ets-org/language-master/en/home/forms/toefl/materials-order-form
+1_property.operation=like
+p.limit=-1
+
+==============================================================================================
+
+path=/content/ets-org/language-master/en/home/praxis/site
+1_property=layout
+1_property.value=threecol
+2_property=jcr:title
+2_property.value=Info Cards - Modifier
+2_property.operation=not
+p.limit=-1
+
+==============================================================================================
+
+https://author-p53802-e458496.adobeaemcloud.com/bin/wcm/references?%20_charset_=utf-8%20&path=/content/ets-org/language-master/en/home/forms/toefl/materials-order-form&predicate=wcmcontent%20&exact=false

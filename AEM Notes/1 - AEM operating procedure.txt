@@ -1,0 +1,9 @@
+-- Requirement will be provided in rally/jira (user storage)
+-- Client will discuss the requirement with BA
+-- BA will work with scrum master and the requirement will be broken down into tasks and will be given to the developers
+-- Developer works on specific tasks(in user_storage) assigned to him during the sprint and commit the code to GIT branches for integration
+-- Documentation(Design document) and unit testing are done by developers for each components they create and upload in sharepoint for reference
+-- Testing results are validaed and integrated in a master branch and will be sent to QA for 2nd level of testing
+-- QA results validated and sent to staged(prep) for final level of testing preceding production testing/live
+-- Testing in staged will be done by client and testing people
+-- Finally the content is ready for live
