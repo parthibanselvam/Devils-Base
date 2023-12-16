@@ -1,2 +1,1 @@
-# AEM
-ETS repository - Project worked in Accenture during 2021-22
+All kind of Reddevil's Technical notes will be stacked inside this repository.
